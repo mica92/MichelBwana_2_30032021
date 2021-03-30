@@ -1,123 +1,197 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Reservia - Trouvez votre hébergement pour des vacances de rêves</title>
-    <!--<meta name='viewport' content='width=device-width, initial-scale=1'>-->
-    <link rel='stylesheet' type='text/css' media='screen' href='reservia.css'>
-</head>
-<body>
-    <header id="entete">
-        <img src="img/logo/Reservia.svg" alt="logo" id="logo">
-        <nav>
-            <ul>
-                <a href="#ancre1">
-                    <li id="hotels">Hébergements</li>
-                </a>
-                <a href="#ancre2">
-                    <li id="loisirs">Activités</li>
-                </a>
-                <a href="#" target="_blank">
-                    <li id="inscription">S'inscrire</li>
-                </a>
-            </ul>
-        </nav>
-    </header><br>
-    <!--
-        Fin Header et début "entre-deux"
-    -->
-    <h3 class="intro">Trouvez votre hébergement pour des vacances de rêve</h3>
-    <p>En plein centre ville ou en pleine nature</p>
-    <div id="entre-deux">
-        <span class="map">
-            <img src="img/map-marker-alt-solid.svg" alt="map">
-        </span>
-        <form>
-            <input type="search" name="ville" id="ville"/>
-        </form>
-        <form>
-            <input type="submit" name="rechercher" id="rechercher" value="Rechercher"/>
-        </form>     
-    </div><br><br>
-    <div id="filtres">
-        <span>Filtres</span>
-        <div class="economique">Économique</div>
-        <div class="familial">Familial</div>
-        <div class="romantique">Romantique</div>
-        <div class="animaux">Animaux autorisés</div>
-    </div><br><br>
-    <!--
-        Fin entre-deux et début section principale
-    -->
-    <section id="hebergements">
-        <!--<h4 id="ancre1">Hébergements à Marseille</h4>-->
-        <div id="conteneur1">
-            <div class="element 1">Element 1</div>
-            <div class="element 2">Element 2</div>
-            <div class="element 3">Element 3</div>
-            <div class="element 4">Element 4</div>
-            <div class="element 5">Element 5</div>
-            <div class="element 6">Element 6</div>
-        <p class="plus">Afficher plus</p>
+    <html lang="fr">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Reservia - Trouvez votre hébergement pour des vacances de rêves</title>
+        <!--<meta name='viewport' content='width=device-width, initial-scale=1'>-->
+        <link rel='stylesheet' type='text/css' media='screen' href='reservia.css'>
+    </head>
+    <body>
+        <div id="conteneur">
+            <header id="entete">
+                <img src="img/logo/Reservia.svg" alt="logo" id="logo">
+                <nav>
+                    <ul>
+                        <a href="#ancre1">
+                            <li id="hotels">Hébergements</li>
+                        </a>
+                        <a href="#ancre2">
+                            <li id="loisirs">Activités</li>
+                        </a>
+                        <a href="#" target="_blank">
+                            <li id="inscription">S'inscrire</li>
+                        </a>
+                    </ul>
+                </nav>
+            </header><br>
+            <!--
+                Fin Header et début Body
+            -->
+            <h3 class="intro">Trouvez votre hébergement pour des vacances de rêve</h3>
+            <p class="sous-intro">En plein centre ville ou en pleine nature</p>
+            <div id="formulaire">
+                <span class="map">
+                    <img src="img/map-marker-alt-solid.svg" alt="map">
+                </span>
+                <form>
+                    <input type="search" name="ville" id="ville"/>
+                </form>
+                <form>
+                    <input type="submit" name="rechercher" id="rechercher" value="Rechercher"/>
+                </form>     
+            </div><br><br>
+            <div id="filtres">
+                <span>Filtres</span>
+                <div class="economique"><img src="img/money-bill-wave-solid.svg" alt="money" id="money">Économique</div>
+                <div class="familial"><img src="img/child-solid.svg" alt="family" id="fam">Familial</div>
+                <div class="romantique"><img src="img/heart-solid.svg" alt="heart" id="heart">Romantique</div>
+                <div class="animaux"><img src="img/dog-solid.svg" alt="dog" id="dog">Animaux autorisés</div>
+            </div><br><br>
+            <!--
+                Début section principale
+            -->
+            <div id="info">
+                <div class="disponibles">Plus de 500 logements sont disponibles dans cette ville</div>
+                <div class="icone">
+                    <img src="img/info-circle-solid.svg" alt="icone"/>
+                </div>
+            </div><br><br>
+            <section id="hebergements">
+                <h4 id="ancre1">Hébergements à Marseille</h4>
+                <div id="conteneur1">
+                    <div class="element 1">
+                        <img src="img/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="cannebiere" id="cannebiere"/>
+                        <div id="lieu">Auberge de la Cannebière</div>
+                        <div id="nuit">Nuit à partir de <span id="prix">25€</span></div>
+                        <div id="etoiles">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-regular.svg" alt="vides" id="vides">
+                        </div>
+                    </div>
+                    <div class="element 2">
+                        <img src="img/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel du port" id="du_port"/>
+                        <div id="lieu">Hôtel du port</div>
+                        <div id="nuit">Nuit à partir de <span id="prix">52€</span></div>
+                        <div id="etoiles">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                        </div>
+                    </div>
+                    <div class="element 3">
+                        <img src="img/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="mouettes" id="mouettes"/>
+                        <div id="lieu">Hôtel Les mouettes</div>
+                        <div id="nuit">Nuit à partir de <span id="prix">76€</span></div>
+                        <div id="etoiles">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-regular.svg" alt="vides" id="vides">
+                        </div>
+                    </div>
+                    <div class="element 4">
+                        <img src="img/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="mer" id="mer"/>
+                        <div id="lieu">Hôtel de la mer</div>
+                        <div id="nuit">Nuit à partir de <span id="prix">46€</span></div>
+                        <div id="etoiles">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-regular.svg" alt="vides" id="vides">
+                            <img src="img/star-regular.svg" alt="vides" id="vides">
+                        </div>
+                    </div>
+                    <div class="element 5">
+                        <img src="img/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="panier" id="panier"/>
+                        <div id="lieu">Auberge Le Panier</div>
+                        <div id="nuit">Nuit à partir de <span id="prix">23€</span></div>
+                        <div id="etoiles">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-regular.svg" alt="vides" id="vides">
+                        </div>
+                    </div>
+                    <div class="element 6">
+                        <img src="img/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="amina" id="amina"/>
+                        <div id="lieu">Hôtel chez Amina</div>
+                        <div id="nuit">Nuit à partir de <span id="prix">96€</span></div>
+                        <div id="etoiles">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                        </div>
+                    </div>
+                    <p class="plus">Afficher plus</p>
+                </div>
+                <aside id="conteneur2">
+                    <h4 id="populaires">Les plus populaires</h4>
+                    <div class="first">First</div>
+                    <div class="second">Second</div>
+                    <div class="third">Third</div>
+                </aside>
+            </section><br><br>
+            <!--
+                Fin section principal et début bloc article
+            -->
+            <h4 id="ancre2">Activités à Marseille</h4>
+            <article id="activites">
+                <div id="conteneur3">
+                    <div class="port">Vieux Port</div>
+                </div>
+                <div id="conteneur4">
+                    <div class="fort">Fort de Pomègue</div><br>
+                    <div class="iles">Îles du Frioul</div>
+                </div>
+                <div id="conteneur5">
+                    <div class="parc">Parc National des Calanques</div>
+                </div>
+                <div id="conteneur6">
+                    <div class="dame">Notre-Dame-de-la-Garde</div><br>
+                    <div class="longchamp">Parc Longchamp</div>
+                </div>
+            </article><br><br>
+            <!--Fin bloc article et début footer-->
+            <footer>
+                <div id="conteneur7">
+                    <div class="propos">
+                        <h4>À propos</h4>
+                        <ul>
+                            <li>Fonctionnement du site</li>
+                            <li>Conditions générales de vente</li>
+                            <li>Données et confidentialité</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="conteneur8">
+                    <div class="nos_hebergements">
+                        <h4>Nos hébergements</h4>
+                        <ul>
+                            <li>Charte qualité</li>
+                            <li>Soumettre votre hôtel</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="conteneur9">
+                    <div class="assistance">
+                        <h4>Assistance</h4>
+                        <ul>
+                            <li>Centre d'aide</li>
+                            <li>Nous contacter</li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
         </div>
-        <aside id="conteneur2">
-            <h4 id="populaires">Les plus populaires</h4>
-            <div class="first">First</div>
-            <div class="second">Second</div>
-            <div class="third">Third</div>
-        </aside>
-    </section><br><br>
-    <!--
-        Fin section principal et début bloc article
-    -->
-    <h4>Activités à Marseille</h4>
-    <article id="activites">
-        <div id="conteneur3">
-            <div class="port">Vieux Port</div>
-        </div>
-        <div id="conteneur4">
-            <div class="fort">Fort de Pomègue</div><br>
-            <div class="iles">Îles du Frioul</div>
-        </div>
-        <div id="conteneur5">
-            <div class="parc">Parc National des Calanques</div>
-        </div>
-        <div id="conteneur6">
-            <div class="dame">Notre-Dame-de-la-Garde</div><br>
-            <div class="longchamp">Parc Longchamp</div>
-        </div>
-    </article><br><br>
-    <!--Fin article et début footer-->
-    <footer>
-        <div id="conteneur7">
-            <div class="propos">
-                <h4>À propos</h4>
-                <ul>
-                    <li>Fonctionnement du site</li>
-                    <li>Conditions générales de vente</li>
-                    <li>Données et confidentialité</li>
-                </ul>
-            </div>
-        </div>
-        <div id="conteneur8">
-            <div class="nos_hebergements">
-                <h4>Nos hébergements</h4>
-                <ul>
-                    <li>Charte qualité</li>
-                    <li>Soumettre votre hôtel</li>
-                </ul>
-            </div>
-        </div>
-        <div id="conteneur9">
-            <div class="assistance">
-                <h4>Assistance</h4>
-                <ul>
-                    <li>Centre d'aide</li>
-                    <li>Nous contacter</li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-</body>
+    </body>
 </html>
