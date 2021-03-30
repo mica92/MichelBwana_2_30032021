@@ -1,0 +1,290 @@
+/*
+Police du site
+*/
+* {
+    font-family: 'Raleway';
+}
+@font-face { 
+    font-family: 'Raleway';
+    font-weight: normal;
+    font-style: normal;
+        src: url('fonts/static/Raleway-Thin.ttf') format('truetype');
+        src: url('fonts/static/Raleway-Light.ttf') format('truetype');
+        src: url('fonts/static/Raleway-Regular.ttf') format('truetype');
+  /*    src: url('fonts/static/Raleway-ExtraLight.ttf') format('truetype');
+        src: url('fonts/static/Raleway-Medium.ttf') format('truetype');
+        src: url('fonts/static/Raleway-SemiBold.ttf') format('truetype');
+        src: url('fonts/static/Raleway-Bold.ttf') format('truetype');
+        src: url('fonts/static/Raleway-ExtraBold.ttf') format('truetype');
+        src: url('fonts/static/Raleway-Black.ttf') format('truetype');
+        src: url('fonts/static/Raleway-ThinItalic.ttf') format('truetype');
+        src: url('fonts/static/Raleway-ExtraLightItalic.ttf') format('truetype');
+        src: url('fonts/static/Raleway-LightItalic.ttf') format('truetype');
+        src: url('fonts/static/Raleway-Italic.ttf') format('truetype');
+        src: url('fonts/static/Raleway-MediumItalic.ttf') format('truetype');
+        src: url('fonts/static/Raleway-SemiBoldItalic.ttf') format('truetype');
+        src: url('fonts/static/Raleway-BoldItalic.ttf') format('truetype');
+        src: url('fonts/static/Raleway-ExtraBoldItalic.ttf') format('truetype');
+        src: url('fonts/static/Raleway-BlackItalic.ttf') format('truetype');
+  */      
+    }
+#entete {
+    /*background-color: aqua;*/
+    position: relative;
+    width: 100%;
+}
+#entete img {
+    /*background-color: yellowgreen;*/
+    position: absolute;
+}
+#entete ul {
+    /*background-color: tomato;*/
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+#entete li {
+    /*background-color: white;*/
+    text-align: center;
+    list-style-type: none;
+    margin-right: 50px;
+    width: 125px;
+}
+header #hotels, #loisirs {
+    color: black;
+}
+header #hotels:hover, #loisirs:hover {
+    color: #0065FC;
+    text-decoration: overline;
+}
+header #inscription {
+    color: #0065FC;
+    font-weight: bolder;
+}
+header a {
+    text-decoration: none;
+}
+
+/*
+Entre-deux
+*/
+#entre-deux {
+    background-color: yellow;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+}
+.map {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 75px;
+    height: 35px;
+}
+#entre-deux img {
+    width: 20px;
+    height: 20px;
+}
+#ville {
+    border: none;
+    width: 300px;
+    height: 35px;
+}
+#rechercher {
+    background-color: #0065FC;
+    border: none;
+    width: 150px;
+    height: 35px;
+    font-weight: bold;
+    color: white;
+}
+/*
+Filtres
+*/
+#filtres {
+    background-color: chocolate;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+#filtres span {
+    background-color: darkslategray;
+    width: 150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 45px;
+}
+.economique, .familial, .romantique, .animaux {
+    background-color: darkgreen;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 45px;
+}
+
+/*
+Section principale
+*/
+#hebergements {
+    background-color: yellow;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*
+#ancre1 {
+    background-color: greenyellow;
+    position: absolute;
+    width: 63%;
+    height: 35px;
+    padding-top: 15px;
+}*/
+#conteneur1 {
+    background-color: #F2F2F2;
+    width: 64%;
+    height: 650px;
+    max-height: 650px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.element {
+    background-color: green;
+    width: 250px;
+    height: 175px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+.element:nth-child(n+4) {
+    margin-bottom: 200px;
+    /*margin-top: 25px;
+    margin-left: 35px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;*/
+}
+.plus {
+    background-color: indigo;
+    width: 150px;
+    height: 35px;
+    margin-top: 550px;
+    margin-right: 745px;
+    position: absolute;
+}
+#conteneur2 {
+    background-color: #F2F2F2;
+    width: 34%;
+    height: 650px;
+    max-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+h4 {
+    background-color: blue;
+    width: auto;
+    height: 35px;
+    padding-left: 45px;
+    margin-top: 25px;
+    position: relative;
+}
+.first, .second, .third {
+    background-color: orangered;
+    width: 425px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 45px;
+}
+
+/*
+Artcile sur les activités
+*/
+#activites {
+    background-color: cornflowerblue;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#conteneur3, #conteneur4, #conteneur5, #conteneur6 {
+    background-color: sienna;
+    width: 300px;
+    height: 450px;
+    max-height: 450px;
+}
+/*
+Utilisez figcaption pour titre sous photos
+*/
+.fort {
+    background-color: yellowgreen;
+    width: 300px;
+    height: 215.5px;
+}
+.iles {
+    background-color: yellowgreen;
+    width: 300px;
+    height: 215.5px;
+}
+.dame {
+    background-color: yellowgreen;
+    width: 300px;
+    height: 215.5px;
+}
+.longchamp {
+    background-color: yellowgreen;
+    width: 300px;
+    height: 215.5px;
+}
+
+/*
+Footer
+*/
+footer {
+    background-color: springgreen;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+#conteneur7, #conteneur8, #conteneur9 {
+    background-color: tomato;
+    width: 300px;
+    height: auto;
+    margin-left: 37.5px;
+    margin-right: 150px;
+}
+footer h4 {
+    padding-left: 0;
+}
+footer ul {
+    padding-left: 0;
+}
+footer li {
+    list-style-type: none;
+}
