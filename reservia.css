@@ -38,7 +38,7 @@ Police du site
 Entete, logo, nav
 */
 #conteneur {
-    background-color: lightcoral;
+    /*background-color: lightcoral;*/
     width: auto;
     height: 1700px;
     margin: auto;
@@ -52,12 +52,12 @@ Entete, logo, nav
     position: relative;
 }
 #logo {
-    background-color: yellowgreen;
+    /*background-color: yellowgreen;*/
     padding-left: 45px;
     position: absolute;
 }
 #entete ul {
-    background-color: tomato;
+    /*background-color: tomato;*/
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -68,7 +68,7 @@ Entete, logo, nav
 
 }
 #entete li {
-    background-color: white;
+    /*background-color: white;*/
     width: 125px;
     text-align: center;
     list-style-type: none;
@@ -98,7 +98,7 @@ Body, formulaire, filtres
     padding-left: 45px;
 }
 #formulaire {
-    background-color: yellow;
+    /*background-color: yellow;*/
     width: 500px;
     display: flex;
     flex-direction: row;
@@ -138,7 +138,7 @@ Body, formulaire, filtres
 Filtres
 */
 #filtres {
-    background-color: chocolate;
+    /*background-color: chocolate;*/
     width: 100%;
     max-width: max-content;
     height: 50px;
@@ -147,7 +147,7 @@ Filtres
     padding-left: 45px;
 }
 #filtres span {
-    background-color: darkslategray;
+    /*background-color: darkslategray;*/
     width: fit-content;
     display: flex;
     justify-content: flex-start;
@@ -155,7 +155,7 @@ Filtres
     margin-right: 25px;
 }
 .economique, .familial, .romantique, .animaux {
-    background-color: darkgreen;
+    /*background-color: darkgreen;*/
     width: 200px;
     display: flex;
     justify-content: flex-start;
@@ -164,7 +164,7 @@ Filtres
     border-radius: 25px;
 }
 #money, #fam, #heart, #dog {
-    background-color: aqua;
+    /*background-color: aqua;*/
     width: 35px;
     height: 50px;
     margin-right: 15px;
@@ -175,7 +175,7 @@ Filtres
 Section principale
 */
 #info {
-    background-color: #F2F2F2;
+    /*background-color: #F2F2F2;*/
     width: 502px;
     height: 25px;
     max-width: 502px;
@@ -188,13 +188,13 @@ Section principale
     padding-left: 25px;
 }
 .icone {
-    background-color: #0065FC;
+    /*background-color: #0065FC;*/
     width: 20px;
     height: 20px;
     margin-left: 45px;
 }
 #hebergements {
-    background-color: yellow;
+    /*background-color: yellow;*/
     width: 100%;
     height: 700px;
     display: flex;
@@ -202,7 +202,7 @@ Section principale
     justify-content: space-between;
 }
 #ancre1 {
-    background-color: lightseagreen;
+    /*background-color: lightseagreen;*/
     width: fit-content;
     height: 35px;
     padding-top: 15px;
@@ -212,8 +212,8 @@ Section principale
 #conteneur1 {
     background-color: #F2F2F2;
     width: 64%;
-    height: 700px;
-    max-height: 700px;
+    height: 750px;
+    max-height: 750px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -230,7 +230,7 @@ Section principale
     color: black;
 }
 .element {
-    background-color: green;
+    background-color: white;
     width: 250px;
     height: 175px;
     max-width: 250px;
@@ -240,7 +240,7 @@ Section principale
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 0;
     border-radius: 25px;
 }
 .element:nth-child(n+4) {
@@ -257,7 +257,7 @@ Section principale
     border-top-right-radius: 25px;
 }
 #lieu1 {
-    background-color: beige;
+    /*background-color: beige;*/
     width: 250px;
     height: 15px;
     font-weight: bold;
@@ -265,7 +265,7 @@ Section principale
     border-radius: 25px;
 }
 #nuit1 {
-    background-color: darkgreen;
+    /*background-color: darkgreen;*/
     width: 250px;
     height: 15px;
     font-size: 0.9em;
@@ -273,14 +273,14 @@ Section principale
     border-radius: 25px;
 }
 #prix1 {
-    background-color: cyan;
+    /*background-color: cyan;*/
     width: 250px;
     height: 15px;
     font-weight: bold; 
     border-radius: 25px;
 }
 #etoiles1 {
-    background-color: chartreuse;
+    /*background-color: chartreuse;*/
     width: 250px;
     height: 15px;
     max-width: 250px;
@@ -293,26 +293,27 @@ Section principale
     border-radius: 25px;
 }
 .plus {
-    background-color: indigo;
+    /*background-color: indigo;*/
     width: 150px;
     height: 35px;
-    margin-top: 550px;
+    margin-top: 650px;
     margin-right: 745px;
+    padding-left: 35px;
     position: absolute;
     border-radius: 25px;
 }
 #conteneur2 {
     background-color: #F2F2F2;
     width: 34%;
-    height: 700px;
-    max-height: 700px;
+    height: 750px;
+    max-height: 750px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     border-radius: 25px;
 }
 #populaires {
-    background-color: blue;
+    /*background-color: blue;*/
     width: 400px;
     height: 35px;
     display: flex;
@@ -323,7 +324,7 @@ Section principale
     position: absolute;
 }
 .first, .second, .third {
-    background-color: orangered;
+    background-color: white;
     width: 400px;
     height: 125px;
     display: flex;
@@ -350,7 +351,7 @@ Section principale
     border-bottom-left-radius: 25px;
 }
 #pop {
-    background-color: fuchsia;
+    /*background-color: fuchsia;*/
     width: 60%;
     height: fit-content;
     display: flex;
@@ -360,7 +361,7 @@ Section principale
     border-radius: 25px;
 }
 #lieu2 {
-    background-color: beige;
+    /*background-color: beige;*/
     width: 250px;
     height: 15px;
     font-weight: bold;
@@ -368,7 +369,7 @@ Section principale
     border-radius: 25px;
 }
 #nuit2 {
-    background-color: darkgreen;
+    /*background-color: darkgreen;*/
     width: fit-content;
     height: 15px;
     font-size: 0.9em;
@@ -377,14 +378,14 @@ Section principale
     border-radius: 25px;
 }
 #prix2 {
-    background-color: cyan;
+    /*background-color: cyan;*/
     width: fit-content;
     height: 15px;
     font-weight: bold; 
     border-radius: 25px;
 }
 #etoiles2 {
-    background-color: chartreuse;
+    /*background-color: chartreuse;*/
     width: 250px;
     height: 15px;
     max-width: 250px;
@@ -401,7 +402,7 @@ Section principale
 Artcile sur les activités
 */
 #ancre2 {
-    background-color: blue;
+    /*background-color: blue;*/
     width: auto;
     height: 35px;
     padding-left: 40px;
@@ -410,7 +411,7 @@ Artcile sur les activités
     position: relative;
 }
 #activites {
-    background-color: cornflowerblue;
+    /*background-color: cornflowerblue;*/
     width: 100%;
     height: auto;
     display: flex;
@@ -419,7 +420,7 @@ Artcile sur les activités
     justify-content: space-around;
 }
 #conteneur3, #conteneur5 {
-    background-color: sienna;
+    /*background-color: sienna;*/
     width: 300px;
     height: 450px;
     display: flex;
@@ -445,7 +446,7 @@ Artcile sur les activités
     color: black;
 }
 #conteneur4, #conteneur6 {
-    background-color: sienna;
+    /*background-color: sienna;*/
     width: 300px;
     height: 450px;
     display: flex;
@@ -455,7 +456,7 @@ Artcile sur les activités
     border-radius: 25px;
 }
 #haut, #bas {
-    background-color: teal;
+    /*background-color: teal;*/
     width: 300px;
     height: 45%;
     display: flex;
@@ -579,7 +580,7 @@ Artcile sur les activités
 Footer
 */
 footer {
-    background-color: springgreen;
+    background-color: #F2F2F2;
     width: inherit;
     height: auto;
     display: flex;
@@ -589,7 +590,7 @@ footer {
     position: relative;
 }
 #conteneur7, #conteneur8, #conteneur9 {
-    background-color: tomato;
+    /*background-color: tomato;*/
     width: 300px;
     height: auto;
     margin-left: 37.5px;
