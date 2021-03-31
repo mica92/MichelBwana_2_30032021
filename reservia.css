@@ -40,7 +40,7 @@ Entete, logo, nav
 #conteneur {
     background-color: lightcoral;
     width: auto;
-    height: 1900px;
+    height: 1850px;
 }
 #header {
     /*background-color: aqua;*/
@@ -188,23 +188,24 @@ Section principale
 #hebergements {
     background-color: yellow;
     width: 100%;
-    height: 650px;
+    height: 700px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 #ancre1 {
     background-color: lightseagreen;
-    position: absolute;
     width: fit-content;
     height: 35px;
     padding-top: 15px;
+    margin-left: 40px;
+    position: absolute;
 }
 #conteneur1 {
     background-color: #F2F2F2;
     width: 64%;
-    height: 650px;
-    max-height: 650px;
+    height: 700px;
+    max-height: 700px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -242,27 +243,27 @@ Section principale
     margin-right: 5px;
     margin-left: 5px;
 }
-#lieu {
+#lieu1 {
     background-color: beige;
     width: 250px;
     height: 15px;
     font-weight: bold;
     padding-left: 5px;
 }
-#nuit {
+#nuit1 {
     background-color: darkgreen;
     width: 250px;
     height: 15px;
     font-size: 0.9em;
     padding-left: 5px;
 }
-#prix {
+#prix1 {
     background-color: cyan;
     width: 250px;
     height: 15px;
     font-weight: bold; 
 }
-#etoiles {
+#etoiles1 {
     background-color: chartreuse;
     width: 250px;
     height: 15px;
@@ -285,36 +286,99 @@ Section principale
 #conteneur2 {
     background-color: #F2F2F2;
     width: 34%;
-    height: 650px;
-    max-height: 650px;
+    height: 700px;
+    max-height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: start;
 }
-h4 {
+#populaires {
     background-color: blue;
-    width: auto;
+    width: 400px;
     height: 35px;
-    padding-left: 45px;
-    margin-top: 25px;
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-start;
+    margin-left: 45px;
+    padding-top: 15px;
+    position: absolute;
 }
 .first, .second, .third {
     background-color: orangered;
-    width: 425px;
+    width: 400px;
     height: 125px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 25px;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 100px;
     margin-left: 45px;
+    position: relative;
 }
-
+#soleil, #coeur_eau {
+    width: 40%;
+    height: 145px;
+    max-height: 145px;
+}
+#bleu_blanc {
+    width: 40%;
+    height: 125px;
+    max-height: 125px;
+}
+#pop {
+    background-color: fuchsia;
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+#lieu2 {
+    background-color: beige;
+    width: 250px;
+    height: 15px;
+    font-weight: bold;
+    padding-left: 15px;
+}
+#nuit2 {
+    background-color: darkgreen;
+    width: fit-content;
+    height: 15px;
+    font-size: 0.9em;
+    margin-top: 25px;
+    padding-left: 15px;
+}
+#prix2 {
+    background-color: cyan;
+    width: fit-content;
+    height: 15px;
+    font-weight: bold; 
+}
+#etoiles2 {
+    background-color: chartreuse;
+    width: 250px;
+    height: 15px;
+    max-width: 250px;
+    max-height: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: space-between;
+    padding-left: 15px;
+    margin-top: 35px;
+}
 /*
 Artcile sur les activités
 */
+#ancre2 {
+    background-color: blue;
+    width: auto;
+    height: 35px;
+    padding-left: 40px;
+    margin-top: 25px;
+    position: relative;
+}
 #activites {
     background-color: cornflowerblue;
     width: 100%;
@@ -324,34 +388,129 @@ Artcile sur les activités
     flex-wrap: wrap;
     justify-content: space-around;
 }
-#conteneur3, #conteneur4, #conteneur5, #conteneur6 {
+#conteneur3, #conteneur5 {
     background-color: sienna;
     width: 300px;
     height: 450px;
-    max-height: 450px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
-/*
-Utilisez figcaption pour titre sous photos
-*/
-.fort {
-    background-color: yellowgreen;
+#conteneur4, #conteneur6 {
+    background-color: sienna;
     width: 300px;
-    height: 215.5px;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+#haut, #bas {
+    background-color: teal;
+    width: 300px;
+    height: 45%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: stretch;
+}
+#bas {
+    margin-top: 15%;
+}
+#vieux_port {
+    width: 300px;
+    height: 80%;
+    max-height: 80%;
+}
+.port {
+    background-color: white;
+    width: 300px;
+    height: 20%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+}
+#pomegue {
+    width: 300px;
+    height: 80%;
+}
+.fort {
+    background-color: white;
+    width: 300px;
+    height: 20%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+}
+#frioul {
+    width: 300px;
+    height: 80%;
 }
 .iles {
-    background-color: yellowgreen;
+    background-color: white;
     width: 300px;
-    height: 215.5px;
+    height: 20%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+    
+}
+#calanques {
+    width: 300px;
+    height: 80%;
+    max-height: 80%;
+}
+.parc_national {
+    background-color: white;
+    width: 300px;
+    height: 20%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+}
+#notre_dame {
+    width: 300px;
+    height: 80%;
 }
 .dame {
-    background-color: yellowgreen;
+    background-color: white;
     width: 300px;
-    height: 215.5px;
+    height: 20%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+}
+#parc_lc {
+    width: 300px;
+    height: 80%;
 }
 .longchamp {
-    background-color: yellowgreen;
+    background-color: white;
     width: 300px;
-    height: 215.5px;
+    height: 20%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 0;
+    padding-left: 15px;
 }
 
 /*
