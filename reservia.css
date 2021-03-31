@@ -38,7 +38,7 @@ Police du site
 Entete, logo, nav
 */
 #conteneur {
-    /*background-color: lightcoral;*/
+    background-color: lightcoral;
     width: auto;
     height: 1700px;
     margin: auto;
@@ -212,8 +212,8 @@ Section principale
 #conteneur1 {
     background-color: #F2F2F2;
     width: 64%;
-    height: 750px;
-    max-height: 750px;
+    height: 700px;
+    max-height: 700px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -240,7 +240,7 @@ Section principale
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin-top: 0;
+    margin-top: 100px;
     border-radius: 25px;
 }
 .element:nth-child(n+4) {
@@ -296,17 +296,16 @@ Section principale
     /*background-color: indigo;*/
     width: 150px;
     height: 35px;
-    margin-top: 650px;
+    margin-top: 550px;
     margin-right: 745px;
-    padding-left: 35px;
     position: absolute;
     border-radius: 25px;
 }
 #conteneur2 {
     background-color: #F2F2F2;
     width: 34%;
-    height: 750px;
-    max-height: 750px;
+    height: 700px;
+    max-height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -485,6 +484,8 @@ Artcile sur les activités
     justify-content: flex-start;
     align-items: center;
     padding-left: 15px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 #pomegue {
@@ -503,6 +504,8 @@ Artcile sur les activités
     justify-content: flex-start;
     align-items: center;
     padding-left: 15px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 #frioul {
     width: 300px;
@@ -520,6 +523,8 @@ Artcile sur les activités
     justify-content: flex-start;
     align-items: center;
     padding-left: 15px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     
 }
 #calanques {
@@ -539,6 +544,8 @@ Artcile sur les activités
     justify-content: flex-start;
     align-items: center;
     padding-left: 15px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 #notre_dame {
     width: 300px;
@@ -556,6 +563,8 @@ Artcile sur les activités
     justify-content: flex-start;
     align-items: center;
     padding-left: 15px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 #parc_lc {
     width: 300px;
@@ -574,6 +583,8 @@ Artcile sur les activités
     align-items: center;
     padding-bottom: 0;
     padding-left: 15px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 /*
