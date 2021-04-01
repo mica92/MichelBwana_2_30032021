@@ -16,22 +16,7 @@ Police du site
     font-style: normal;
         src: url('fonts/static/Raleway-Thin.ttf') format('truetype');
         src: url('fonts/static/Raleway-Light.ttf') format('truetype');
-        src: url('fonts/static/Raleway-Regular.ttf') format('truetype');
-  /*    src: url('fonts/static/Raleway-ExtraLight.ttf') format('truetype');
-        src: url('fonts/static/Raleway-Medium.ttf') format('truetype');
-        src: url('fonts/static/Raleway-SemiBold.ttf') format('truetype');
-        src: url('fonts/static/Raleway-ExtraBold.ttf') format('truetype');
-        src: url('fonts/static/Raleway-Black.ttf') format('truetype');
-        src: url('fonts/static/Raleway-ThinItalic.ttf') format('truetype');
-        src: url('fonts/static/Raleway-ExtraLightItalic.ttf') format('truetype');
-        src: url('fonts/static/Raleway-LightItalic.ttf') format('truetype');
-        src: url('fonts/static/Raleway-Italic.ttf') format('truetype');
-        src: url('fonts/static/Raleway-MediumItalic.ttf') format('truetype');
-        src: url('fonts/static/Raleway-SemiBoldItalic.ttf') format('truetype');
-        src: url('fonts/static/Raleway-BoldItalic.ttf') format('truetype');
-        src: url('fonts/static/Raleway-ExtraBoldItalic.ttf') format('truetype');
-        src: url('fonts/static/Raleway-BlackItalic.ttf') format('truetype');
-  */      
+        src: url('fonts/static/Raleway-Regular.ttf') format('truetype');    
 }
 
 /*
@@ -40,7 +25,7 @@ Entete, logo, nav
 #conteneur {
     background-color: lightcoral;
     width: auto;
-    height: 1700px;
+    height: auto;
     margin: auto;
     padding: 15px;
 }
@@ -139,15 +124,13 @@ Filtres
 */
 #filtres {
     /*background-color: chocolate;*/
-    width: 100%;
-    max-width: max-content;
-    height: 50px;
+    width: fit-content;
+    height: auto;
     display: flex;
     flex-direction: row;
-    padding-left: 45px;
+    margin-left: 45px;
 }
 #filtres span {
-    /*background-color: darkslategray;*/
     width: fit-content;
     display: flex;
     justify-content: flex-start;
@@ -155,37 +138,86 @@ Filtres
     margin-right: 25px;
 }
 .economique, .familial, .romantique, .animaux {
-    /*background-color: darkgreen;*/
     width: 200px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    height: 34px;
     margin-right: 25px;
+    border: 2px solid #F2F2F2;
     border-radius: 25px;
 }
-#money, #fam, #heart, #dog {
-    /*background-color: aqua;*/
-    width: 35px;
-    height: 50px;
-    margin-right: 15px;
+.fa-money-bill-wave {
+    background-color: #c1d5f3;
+    color: #2e69c2;
+    width: 27.5px;
+    height: 26px;
     border-radius: 50%;
+    position: relative;
+    padding-top: 13px;
+    padding-left: 8px;
+    bottom: 2.3px;
+    right: 1.5px;
 }
-
+.fa-child {
+    background-color: #c1d5f3;
+    color: #2e69c2;
+    width: 27.5px;
+    height: 26px;
+    border-radius: 50%;
+    position: relative;
+    padding-top: 13px;
+    padding-left: 12px;
+    bottom: 2.3px;
+    right: 1px;
+}
+.fa-heart {
+    background-color: #c1d5f3;
+    color: #2e69c2;
+    width: 27.5px;
+    height: 26px;
+    border-radius: 50%;
+    position: relative;
+    padding-top: 13px;
+    padding-left: 12px;
+    bottom: 2.3px;
+    right: 2.5px;
+}
+.fa-dog {
+    background-color: #c1d5f3;
+    color: #2e69c2;
+    width: 27.5px;
+    height: 26px;
+    border-radius: 50%;
+    position: relative;
+    padding-top: 13px;
+    padding-left: 12px;
+    bottom: 2.3px;
+    right: 1.5px;
+}
 /*
 Section principale
 */
-#info {
-    /*background-color: #F2F2F2;*/
-    width: 502px;
-    height: 25px;
-    max-width: 502px;
-    max-height: 25px;
+#information {
+    /*background-color: sandybrown;*/
+    width: fit-content;
+    height: 35px;
+    margin-left: 40px;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
+}
+.fa-info-circle {
+    color: #0065FC;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    padding-left: 5px;
+    position: relative;
+    top: 3px;
 }
 .disponibles {
-    padding-left: 25px;
+    /*background-color: aqua;*/
+    width: fit-content;
+    height: 30px;
+    margin-left: 15px;
+    position: relative;
+    top: 3px;
 }
 .icone {
     /*background-color: #0065FC;*/
@@ -195,23 +227,25 @@ Section principale
 }
 #hebergements {
     /*background-color: yellow;*/
-    width: 100%;
-    height: 700px;
+    width: 95%;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 45px;
+    margin-right: 45px;
 }
 #ancre1 {
     /*background-color: lightseagreen;*/
     width: fit-content;
     height: 35px;
     padding-top: 15px;
-    margin-left: 40px;
+    margin-left: 30px;
     position: absolute;
 }
 #conteneur1 {
     background-color: #F2F2F2;
-    width: 64%;
+    width: 65%;
     height: 700px;
     max-height: 700px;
     display: flex;
@@ -247,8 +281,8 @@ Section principale
     margin-bottom: 200px;
 }
 #cannebiere, #du_port, #mouettes, #mer, #panier, #amina {
-    width: fit-content;
-    height: 95px;
+    width: auto;
+    height: auto;
     max-height: 100px;
     margin-bottom: 0;
     margin-right: 5px;
@@ -295,7 +329,7 @@ Section principale
 .plus {
     /*background-color: indigo;*/
     width: 150px;
-    height: 35px;
+    height: 30px;
     margin-top: 550px;
     margin-right: 745px;
     position: absolute;
@@ -303,7 +337,7 @@ Section principale
 }
 #conteneur2 {
     background-color: #F2F2F2;
-    width: 34%;
+    width: 25%;
     height: 700px;
     max-height: 700px;
     display: flex;
