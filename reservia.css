@@ -37,8 +37,6 @@ body {
     width: auto;
     height: auto;
     margin: auto;
-    padding-right: 45px;
-    padding-left: 45px;
 }
 
 header {
@@ -48,6 +46,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    padding-right: 45px;
+    padding-left: 45px;
 }
 
 #logo {
@@ -57,7 +57,7 @@ header {
 
 #navigation {
     background-color: seagreen;
-    width: 35%;
+    width: 33%;
 }
 
 #navigation nav {
@@ -87,7 +87,7 @@ header {
 #loisirs {
     color: black;
     font-weight: normal;
-    margin-right: 100px;
+    margin-right: 60px;
 }
 
 #hotels:hover,
@@ -111,8 +111,19 @@ header a {
 Body, formulaire, filtres
 */
 
+.intro {
+    width: auto;
+    padding-right: 45px;
+    padding-left: 45px;
+    margin: 0;
+}
+
 .sous-intro {
+    width: auto;
     font-size: 1.05em;
+    padding-right: 45px;
+    padding-left: 45px;
+    margin: 0;
 }
 
 #formulaire {
@@ -120,6 +131,8 @@ Body, formulaire, filtres
     width: 450px;
     display: flex;
     flex-direction: row;
+    padding-right: 45px;
+    padding-left: 45px;
 }
 
 .map {
@@ -168,6 +181,7 @@ Filtres
     height: 45px;
     display: flex;
     justify-content: space-between;
+    padding-left: 45px;
 }
 
 #filtres span {
@@ -185,24 +199,29 @@ Filtres
 .animaux {
     background-color: tomato;
     width: fit-content;
+    min-width: 150px;
     display: flex;
+    /* justify-content: flex-start; */
     padding-left: 25px;
     padding-top: 10px;
+    margin-right: 50px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
     border: 2px solid #F2F2F2;
+    font-weight: bold;
 }
 
 .bill,
 .child,
 .heart,
 .dog {
-    background-color: yellow;
+    /*background-color: yellow;*/
+    width: 36px;
     height: 45px;
     border-radius: 50%;
-    right: 25px;
+    right: 26.5px;
     bottom: 15px;
     position: relative;
 }
@@ -210,53 +229,49 @@ Filtres
 .fa-money-bill-wave {
     background-color: #c1d5f3;
     color: #2e69c2;
-    width: 27.5px;
+    width: inherit;
     height: 30px;
     border-radius: 50%;
     position: relative;
     padding-top: 15px;
-    padding-left: 8px;
-    bottom: 0.5px;
-    right: 1px;
+    margin-top: 2.5px;
+    text-align: center;
 }
 
 .fa-child {
     background-color: #c1d5f3;
     color: #2e69c2;
-    width: 27.5px;
-    height: 26px;
+    width: inherit;
+    height: 30px;
     border-radius: 50%;
     position: relative;
-    padding-top: 13px;
-    padding-left: 12px;
-    bottom: 2.3px;
-    right: 1px;
+    padding-top: 15px;
+    margin-top: 2.5px;
+    text-align: center;
 }
 
 .fa-heart {
     background-color: #c1d5f3;
     color: #2e69c2;
-    width: 27.5px;
-    height: 26px;
+    width: inherit;
+    height: 30px;
     border-radius: 50%;
     position: relative;
-    padding-top: 13px;
-    padding-left: 12px;
-    bottom: 2.3px;
-    right: 2.5px;
+    padding-top: 15px;
+    margin-top: 2.5px;
+    text-align: center;
 }
 
 .fa-dog {
     background-color: #c1d5f3;
     color: #2e69c2;
-    width: 27.5px;
-    height: 26px;
+    width: inherit;
+    height: 30px;
     border-radius: 50%;
     position: relative;
-    padding-top: 13px;
-    padding-left: 12px;
-    bottom: 2.3px;
-    right: 1.5px;
+    padding-top: 15px;
+    margin-top: 2.5px;
+    text-align: center;
 }
 
 
@@ -268,8 +283,9 @@ Section principale
     /*background-color: sandybrown;*/
     width: fit-content;
     height: 35px;
-    margin-left: 40px;
     display: flex;
+    padding-right: 45px;
+    padding-left: 45px;
 }
 
 .fa-info-circle {
@@ -299,14 +315,14 @@ Section principale
 }
 
 #hebergements {
-    /*background-color: yellow;*/
-    width: 95%;
-    height: auto;
+    /* background-color: yellow; */
+    width: auto;
+    height: 650px;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-between;
-    margin-left: 45px;
-    margin-right: 45px;
+    padding-right: 45px;
+    padding-left: 45px;
 }
 
 #ancre1 {
@@ -321,14 +337,20 @@ Section principale
 #conteneur1 {
     background-color: #F2F2F2;
     width: 65%;
-    height: 700px;
-    max-height: 700px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    height: auto;
+    padding: 100px 30px 30px 30px;
     border-radius: 25px;
+}
+
+#conteneur1_haut {
+    display: flex;
+    justify-content: space-between;
+}
+
+#conteneur1_bas {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
 }
 
 #conteneur1 a {
@@ -341,23 +363,23 @@ Section principale
     color: black;
 }
 
-.element {
-    background-color: white;
-    width: 250px;
-    height: 175px;
-    max-width: 250px;
-    max-height: 175px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 100px;
+.element1,
+.element2,
+.element4,
+.element5 {
+    background-color: blue;
+    width: 275px;
+    height: 200px;
     border-radius: 25px;
+    margin-right: 25px;
 }
 
-.element:nth-child(n+4) {
-    margin-bottom: 200px;
+.element3,
+.element6 {
+    background-color: blue;
+    width: 275px;
+    height: 200px;
+    border-radius: 25px;
 }
 
 #cannebiere,
@@ -366,12 +388,11 @@ Section principale
 #mer,
 #panier,
 #amina {
-    width: auto;
-    height: auto;
-    max-height: 100px;
-    margin-bottom: 0;
-    margin-right: 5px;
-    margin-left: 5px;
+    width: 265px;
+    height: 60%;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
@@ -382,6 +403,7 @@ Section principale
     height: 15px;
     font-weight: bold;
     padding-left: 5px;
+    margin-bottom: 5px;
     border-radius: 25px;
 }
 
@@ -391,6 +413,7 @@ Section principale
     height: 15px;
     font-size: 0.9em;
     padding-left: 5px;
+    margin-bottom: 5px;
     border-radius: 25px;
 }
 
@@ -417,20 +440,18 @@ Section principale
 }
 
 .plus {
-    /*background-color: indigo;*/
+    background-color: indigo;
     width: 150px;
     height: 30px;
-    margin-top: 550px;
-    margin-right: 745px;
-    position: absolute;
-    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 25px;
+    position: relative;
 }
 
 #conteneur2 {
     background-color: #F2F2F2;
-    width: 25%;
-    height: 700px;
-    max-height: 700px;
+    width: 29%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -545,7 +566,8 @@ Artcile sur les activités
     width: auto;
     height: 35px;
     margin-top: 25px;
-    border-radius: 25px;
+    padding-right: 45px;
+    padding-left: 45px;
     position: relative;
 }
 
@@ -556,7 +578,9 @@ Artcile sur les activités
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-right: 45px;
+    padding-left: 45px;
 }
 
 #conteneur3,
@@ -761,6 +785,8 @@ footer {
     flex-direction: row;
     justify-content: flex-start;
     align-content: flex-start;
+    padding-right: 45px;
+    padding-left: 45px;
     position: relative;
 }
 
@@ -770,8 +796,6 @@ footer {
     /*background-color: tomato;*/
     width: 300px;
     height: auto;
-    margin-left: 37.5px;
-    margin-right: 150px;
 }
 
 footer h4 {

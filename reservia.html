@@ -31,12 +31,14 @@
                     </ul>
                 </nav>
             </div>
-        </header><br>
+        </header><br><br>
         <!--
             Fin Header et début Body
         -->
-        <h2 class="intro">Trouvez votre hébergement pour des vacances de rêve</h2>
-        <p class="sous-intro">En plein centre ville ou en pleine nature</p>
+        <div class="titres">
+            <h2 class="intro">Trouvez votre hébergement pour des vacances de rêve</h2>
+            <span class="sous-intro">En plein centre ville ou en pleine nature</span>
+        </div><br>
         <div id="formulaire">
             <span class="map">
                 <img src="img/map-marker-alt-solid.svg" alt="map">
@@ -51,14 +53,16 @@
         <div id="filtres">
             <span>Filtres</span>
             <div class="economique">
-                <div class="bill"><i class="fas fa-money-bill-wave"></i></div>Économique</div>
+                <div class="bill">
+                    <div class="fas fa-money-bill-wave"></div>
+                </div>Économique</div>
             <div class="familial">
                 <div class="child"><i class="fas fa-child"></i>
                 </div>Familial</div>
             <div class="romantique">
                 <div class="heart"><i class="fas fa-heart"></i></div>Romantique</div>
             <div class="animaux">
-                <div class="dog"><i class="fas fa-dog"></i></div> autorisés</div>
+                <div class="dog"><i class="fas fa-dog"></i></div>Animaux autorisés</div>
         </div><br><br>
         <!--b
             Début section principale
@@ -71,76 +75,82 @@
         <section id="hebergements">
             <h4 id="ancre1">Hébergements à Marseille</h4>
             <div id="conteneur1">
-                <div class="element 1">
-                    <img src="img/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="cannebiere" id="cannebiere" />
-                    <div id="lieu1">Auberge de la Cannebière</div>
-                    <div id="nuit1">Nuit à partir de <span id="prix1">25€</span></div>
-                    <div id="etoiles1">
-                        <img src="img/star-solid.svg" alt="pleines" id="pleines">
-                        <img src="img/star-solid.svg" alt="pleines" id="pleines">
-                        <img src="img/star-solid.svg" alt="pleines" id="pleines">
-                        <img src="img/star-solid.svg" alt="pleines" id="pleines">
-                        <img src="img/star-regular.svg" alt="vides" id="vides">
+                <div id="conteneur1_haut">
+                    <div class="element1">
+                        <a href="#" target="_blank">
+                            <img src="img/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="cannebiere" id="cannebiere" />
+                            <div id="lieu1">Auberge de la Cannebière</div>
+                            <div id="nuit1">Nuit à partir de <span id="prix1">25€</span></div>
+                            <div id="etoiles1">
+                                <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                                <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                                <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                                <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                                <img src="img/star-regular.svg" alt="vides" id="vides">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="element2">
+                        <img src="img/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel du port" id="du_port" />
+                        <div id="lieu1">Hôtel du port</div>
+                        <div id="nuit1">Nuit à partir de <span id="prix1">52€</span></div>
+                        <div id="etoiles1">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                        </div>
+                    </div>
+                    <div class="element3">
+                        <img src="img/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="mouettes" id="mouettes" />
+                        <div id="lieu1">Hôtel Les mouettes</div>
+                        <div id="nuit1">Nuit à partir de <span id="prix1">76€</span></div>
+                        <div id="etoiles1">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-regular.svg" alt="vides" id="vides">
+                            <img src="img/star-regular.svg" alt="vides" id="vides">
+                        </div>
                     </div>
                 </div>
-                <div class="element 2">
-                    <img src="img/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel du port" id="du_port" />
-                    <div id="lieu1">Hôtel du port</div>
-                    <div id="nuit1">Nuit à partir de <span id="prix1">52€</span></div>
-                    <div id="etoiles1">
-                        <img src="img/star-solid.svg" alt="pleines" id="pleines">
-                        <img src="img/star-solid.svg" alt="pleines" id="pleines">
-                        <img src="img/star-solid.svg" alt="pleines" id="pleines">
-                        <img src="img/star-solid.svg" alt="pleines" id="pleines">
-                        <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                <div id="conteneur1_bas">
+                    <div class="element4">
+                        <img src="img/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="mer" id="mer" />
+                        <div id="lieu1">Hôtel de la mer</div>
+                        <div id="nuit1">Nuit à partir de <span id="prix1">46€</span></div>
+                        <div id="etoiles1">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-regular.svg" alt="vides" id="vides">
+                            <img src="img/star-regular.svg" alt="vides" id="vides">
+                        </div>
                     </div>
-                </div>
-                <div class="element 3">
-                    <img src="img/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="mouettes" id="mouettes" />
-                    <div id="lieu1">Hôtel Les mouettes</div>
-                    <div id="nuit1">Nuit à partir de <span id="prix1">76€</span></div>
-                    <div id="etoiles1">
-                        <img src="img/star-solid.svg" alt="pleines" id="pleines">
-                        <img src="img/star-solid.svg" alt="pleines" id="pleines">
-                        <img src="img/star-solid.svg" alt="pleines" id="pleines">
-                        <img src="img/star-regular.svg" alt="vides" id="vides">
-                        <img src="img/star-regular.svg" alt="vides" id="vides">
+                    <div class="element5">
+                        <img src="img/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="panier" id="panier" />
+                        <div id="lieu1">Auberge Le Panier</div>
+                        <div id="nuit1">Nuit à partir de <span id="prix1">23€</span></div>
+                        <div id="etoiles1">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-regular.svg" alt="vides" id="vides">
+                        </div>
                     </div>
-                </div>
-                <div class="element 4">
-                    <img src="img/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="mer" id="mer" />
-                    <div id="lieu1">Hôtel de la mer</div>
-                    <div id="nuit1">Nuit à partir de <span id="prix1">46€</span></div>
-                    <div id="etoiles1">
-                        <img src="img/star-solid.svg" alt="pleines" id="pleines">
-                        <img src="img/star-solid.svg" alt="pleines" id="pleines">
-                        <img src="img/star-solid.svg" alt="pleines" id="pleines">
-                        <img src="img/star-regular.svg" alt="vides" id="vides">
-                        <img src="img/star-regular.svg" alt="vides" id="vides">
-                    </div>
-                </div>
-                <div class="element 5">
-                    <img src="img/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="panier" id="panier" />
-                    <div id="lieu1">Auberge Le Panier</div>
-                    <div id="nuit1">Nuit à partir de <span id="prix1">23€</span></div>
-                    <div id="etoiles1">
-                        <img src="img/star-solid.svg" alt="pleines" id="pleines">
-                        <img src="img/star-solid.svg" alt="pleines" id="pleines">
-                        <img src="img/star-solid.svg" alt="pleines" id="pleines">
-                        <img src="img/star-solid.svg" alt="pleines" id="pleines">
-                        <img src="img/star-regular.svg" alt="vides" id="vides">
-                    </div>
-                </div>
-                <div class="element 6">
-                    <img src="img/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="amina" id="amina" />
-                    <div id="lieu1">Hôtel chez Amina</div>
-                    <div id="nuit1">Nuit à partir de <span id="prix1">96€</span></div>
-                    <div id="etoiles1">
-                        <img src="img/star-solid.svg" alt="pleines" id="pleines">
-                        <img src="img/star-solid.svg" alt="pleines" id="pleines">
-                        <img src="img/star-solid.svg" alt="pleines" id="pleines">
-                        <img src="img/star-solid.svg" alt="pleines" id="pleines">
-                        <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                    <div class="element6">
+                        <img src="img/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="amina" id="amina" />
+                        <div id="lieu1">Hôtel chez Amina</div>
+                        <div id="nuit1">Nuit à partir de <span id="prix1">96€</span></div>
+                        <div id="etoiles1">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                            <img src="img/star-solid.svg" alt="pleines" id="pleines">
+                        </div>
                     </div>
                 </div>
                 <p class="plus">Afficher plus</p>
@@ -225,38 +235,39 @@
                 </div>
             </div>
         </article>
+
+        <!--Fin bloc article et début footer-->
+        <footer>
+            <div id="conteneur7">
+                <div class="propos">
+                    <h4>À propos</h4>
+                    <ul>
+                        <li>Fonctionnement du site</li>
+                        <li>Conditions générales de vente</li>
+                        <li>Données et confidentialité</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="conteneur8">
+                <div class="nos_hebergements">
+                    <h4>Nos hébergements</h4>
+                    <ul>
+                        <li>Charte qualité</li>
+                        <li>Soumettre votre hôtel</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="conteneur9">
+                <div class="assistance">
+                    <h4>Assistance</h4>
+                    <ul>
+                        <li>Centre d'aide</li>
+                        <li>Nous contacter</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </div>
-    <!--Fin bloc article / conteneur principal et début footer-->
-    <footer>
-        <div id="conteneur7">
-            <div class="propos">
-                <h4>À propos</h4>
-                <ul>
-                    <li>Fonctionnement du site</li>
-                    <li>Conditions générales de vente</li>
-                    <li>Données et confidentialité</li>
-                </ul>
-            </div>
-        </div>
-        <div id="conteneur8">
-            <div class="nos_hebergements">
-                <h4>Nos hébergements</h4>
-                <ul>
-                    <li>Charte qualité</li>
-                    <li>Soumettre votre hôtel</li>
-                </ul>
-            </div>
-        </div>
-        <div id="conteneur9">
-            <div class="assistance">
-                <h4>Assistance</h4>
-                <ul>
-                    <li>Centre d'aide</li>
-                    <li>Nous contacter</li>
-                </ul>
-            </div>
-        </div>
-    </footer>
 </body>
 
 </html>
