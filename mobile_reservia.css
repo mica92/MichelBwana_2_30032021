@@ -28,14 +28,18 @@ Entete, logo, navigation
 */
 
 body {
-    width: auto;
+    max-width: 768px;
     position: relative;
 }
 
 #conteneur {
-    width: auto;
+    width: 768px;
     height: auto;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 header {
@@ -44,17 +48,26 @@ header {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-right: 45px;
-    padding-left: 45px;
 }
 
 #logo {
-    width: fit-content;
+    width: 30%;
+    position: relative;
+    left: 45px;
+}
+
+#logo img {
+    min-inline-size: -webkit-fill-available;
 }
 
 #navigation {
+    width: 784px;
+    /* margin-left: 62%; */
+    position: absolute;
+    top: 125px;
+    right: 610px;
     width: 25%;
-    margin-left: 62%;
+    /* margin-left: 69%;
 }
 
 #navigation nav {
@@ -75,30 +88,35 @@ header {
     width: auto;
     text-align: center;
     list-style-type: none;
+    font-size: xx-large;
 }
 
 #hotels,
 #loisirs {
     color: black;
     font-weight: normal;
-    margin-right: 58px;
+}
+
+#hotels {
+    margin-right: 384px;
 }
 
 #hotels:hover,
 #loisirs:hover {
     color: #0065FC;
-    text-decoration: overline;
+    text-decoration: underline;
 }
 
 #inscription {
+    font-size: xx-large;
     width: fit-content;
     height: auto;
     font-weight: bold;
     text-decoration: none;
     list-style-type: none;
-    padding-top: 15px;
-    position: absolute;
-    margin-left: 87%;
+    padding-top: 55px;
+    position: relative;
+    left: 58%;
 }
 
 #inscription a {
@@ -114,33 +132,39 @@ header a {
 Body, formulaire, filtres
 */
 
+.titres {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
 .intro {
-    width: auto;
+    width: 650px;
     padding-right: 45px;
-    padding-left: 45px;
-    margin: 0;
+    padding-left: 90px;
+    margin-bottom: 25px;
+    font-size: xxx-large;
 }
 
 .sous-intro {
     width: auto;
-    font-size: 1.05em;
+    font-size: xx-large;
     padding-right: 45px;
     padding-left: 45px;
-    margin: 0;
+    margin-left: 50px;
 }
 
 #formulaire {
-    width: 450px;
+    width: auto;
     display: flex;
     flex-direction: row;
     padding-right: 45px;
-    padding-left: 45px;
+    padding-left: 90px;
 }
 
 .map {
     background-color: #F2F2F2;
     width: 125px;
-    height: 45px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,14 +180,14 @@ Body, formulaire, filtres
 
 #ville {
     width: 250px;
-    height: 45px;
+    height: 70px;
     border: none;
 }
 
 #rechercher {
     background-color: #0065FC;
     width: 150px;
-    height: 45px;
+    height: 70px;
     border: none;
     font-weight: bold;
     font-size: 1.1em;
@@ -181,21 +205,71 @@ Filtres
     width: 70%;
     height: 45px;
     display: flex;
-    justify-content: space-between;
-    padding-left: 45px;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 90px;
+    margin-bottom: 175px;
 }
 
 #filtres span {
-    width: fit-content;
+    width: 768px;
+    font-weight: bold;
+    font-size: x-large;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-right: 25px;
+    margin-bottom: 25px;
 }
 
-.economique,
-.familial,
-.romantique,
+.economique {
+    width: fit-content;
+    min-width: 150px;
+    display: flex;
+    /* justify-content: flex-start; */
+    padding-left: 25px;
+    padding-top: 10px;
+    margin-right: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border: 2px solid #F2F2F2;
+    font-weight: bold;
+}
+
+.familial {
+    width: fit-content;
+    min-width: 150px;
+    display: flex;
+    /* justify-content: flex-start; */
+    padding-left: 25px;
+    padding-top: 10px;
+    margin-right: 145px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border: 2px solid #F2F2F2;
+    font-weight: bold;
+}
+
+.romantique {
+    width: fit-content;
+    min-width: 150px;
+    display: flex;
+    /* justify-content: flex-start; */
+    padding-left: 25px;
+    padding-top: 10px;
+    margin-right: 145px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border: 2px solid #F2F2F2;
+    font-weight: bold;
+}
+
 .animaux {
     width: fit-content;
     min-width: 150px;
@@ -203,7 +277,7 @@ Filtres
     /* justify-content: flex-start; */
     padding-left: 25px;
     padding-top: 10px;
-    margin-right: 50px;
+    /*margin-right: 50px;*/
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
@@ -310,40 +384,57 @@ Section principale
 }
 
 #hebergements {
-    width: auto;
-    height: 650px;
+    width: 768px;
+    height: auto;
     display: flex;
-    /* flex-direction: row; */
+    flex-direction: column-reverse;
     justify-content: space-between;
-    padding-right: 45px;
-    padding-left: 45px;
+    /* padding-right: 45px; */
+    padding-left: 90px;
 }
 
 #ancre1 {
     width: fit-content;
+    font-size: x-large;
     height: 35px;
     padding-top: 15px;
-    margin-left: 30px;
-    position: absolute;
+    margin-left: 45px;
+    position: relative;
+    bottom: 2360px;
 }
 
 #conteneur1 {
-    background-color: #F2F2F2;
-    width: 65%;
+    margin-top: 50px;
+    width: 768px;
     height: auto;
-    padding: 100px 30px 30px 30px;
-    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 
 #conteneur1_haut {
+    width: 88%;
+    height: auto;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 120px;
+    margin-left: 45px;
+    position: relative;
     justify-content: space-between;
 }
 
 #conteneur1_bas {
+    width: 88%;
+    height: auto;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 45px;
+    position: relative;
     justify-content: space-between;
-    margin-top: 50px;
 }
 
 #conteneur1 a {
@@ -360,20 +451,33 @@ Section principale
 .element2,
 .element4,
 .element5 {
+    width: 100%;
+    height: 240px;
+    display: flex;
+    margin-bottom: 65px;
     background-color: white;
-    width: 275px;
-    height: 200px;
-    margin-right: 25px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 65px;
     border-radius: 25px;
+    position: relative;
     box-shadow: 0 6px 3px blue;
 }
 
 .element3,
 .element6 {
+    width: 100%;
+    height: 240px;
+    display: flex;
+    margin-bottom: 65px;
     background-color: white;
-    width: 275px;
-    height: 200px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 65px;
     border-radius: 25px;
+    position: relative;
     box-shadow: 0 6px 3px blue;
 }
 
@@ -383,7 +487,7 @@ Section principale
 #mer,
 #panier,
 #amina {
-    width: 265px;
+    width: 136px;
     height: 60%;
     padding-top: 5px;
     padding-right: 5px;
@@ -434,13 +538,15 @@ Section principale
     width: 150px;
     height: 30px;
     font-weight: bold;
+    font-size: 1.25em;
     margin-top: 25px;
+    padding-left: 45px;
     position: relative;
 }
 
 #conteneur2 {
     background-color: #F2F2F2;
-    width: 29%;
+    width: 768px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -449,8 +555,9 @@ Section principale
 }
 
 #populaires {
-    width: 400px;
+    width: 725px;
     height: 35px;
+    font-size: x-large;
     display: flex;
     flex-direction: row;
     justify-self: flex-start;
@@ -460,21 +567,21 @@ Section principale
 }
 
 #chart {
-    width: 25px;
-    height: 25px;
-    padding-left: 150px;
+    width: 60px;
+    height: 30px;
+    padding-left: 415px;
     margin-bottom: 15px;
 }
 
 .first {
     background-color: white;
-    width: 79%;
-    height: 125px;
+    width: 88%;
+    height: 170px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-top: 100px;
+    margin-top: 120px;
     margin-left: 45px;
     border-radius: 25px;
     position: relative;
@@ -484,8 +591,8 @@ Section principale
 .second,
 .third {
     background-color: white;
-    width: 79%;
-    height: 125px;
+    width: 88%;
+    height: 170px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -500,16 +607,16 @@ Section principale
 #soleil,
 #coeur_eau {
     width: 40%;
-    height: 145px;
-    max-height: 145px;
+    height: 210px;
+    /* max-height: 170px; */
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
 }
 
 #bleu_blanc {
     width: 40%;
-    height: 125px;
-    max-height: 125px;
+    height: 210px;
+    /* max-height: 170px; */
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
 }
@@ -527,16 +634,18 @@ Section principale
 #lieu2 {
     width: 250px;
     height: 15px;
+    font-size: 1.25em;
     font-weight: bold;
     padding-left: 15px;
+    padding-top: 20px;
     border-radius: 25px;
 }
 
 #nuit2 {
     width: fit-content;
     height: 15px;
-    font-size: 0.9em;
-    margin-top: 25px;
+    font-size: 1.15em;
+    margin-top: 40px;
     padding-left: 15px;
     border-radius: 25px;
 }
@@ -551,15 +660,15 @@ Section principale
 #etoiles2 {
     /*background-color: chartreuse;*/
     width: 250px;
-    height: 15px;
+    height: 20px;
     max-width: 250px;
-    max-height: 15px;
+    max-height: 20px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-content: space-between;
     padding-left: 15px;
-    margin-top: 45px;
+    margin-top: 78px;
     border-radius: 25px;
 }
 
@@ -570,22 +679,18 @@ Artcile sur les activités
 
 #ancre2 {
     width: auto;
+    font-size: xx-large;
     height: 35px;
-    margin-top: 25px;
     padding-right: 45px;
-    padding-left: 45px;
+    padding-left: 90px;
     position: relative;
 }
 
 #activites {
     width: auto;
     height: 450px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
     padding-right: 45px;
-    padding-left: 45px;
+    padding-left: 90px;
 }
 
 #conteneur3,
@@ -818,6 +923,7 @@ footer {
     padding-right: 45px;
     padding-left: 45px;
     position: relative;
+    top: 1250px;
 }
 
 #conteneur7,
