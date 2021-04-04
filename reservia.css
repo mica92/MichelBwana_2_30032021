@@ -87,7 +87,7 @@ header {
 #loisirs {
     color: black;
     font-weight: normal;
-    margin-right: 60px;
+    margin-right: 80px;
 }
 
 #hotels:hover,
@@ -367,19 +367,21 @@ Section principale
 .element2,
 .element4,
 .element5 {
-    background-color: blue;
+    background-color: white;
     width: 275px;
     height: 200px;
-    border-radius: 25px;
     margin-right: 25px;
+    border-radius: 25px;
+    box-shadow: 0 6px 3px blue;
 }
 
 .element3,
 .element6 {
-    background-color: blue;
+    background-color: white;
     width: 275px;
     height: 200px;
     border-radius: 25px;
+    box-shadow: 0 6px 3px blue;
 }
 
 #cannebiere,
@@ -470,11 +472,16 @@ Section principale
     position: absolute;
 }
 
-.first,
-.second,
-.third {
+#chart {
+    width: 25px;
+    height: 25px;
+    padding-left: 150px;
+    margin-bottom: 15px;
+}
+
+.first {
     background-color: white;
-    width: 400px;
+    width: 79%;
     height: 125px;
     display: flex;
     flex-direction: column;
@@ -484,6 +491,23 @@ Section principale
     margin-left: 45px;
     border-radius: 25px;
     position: relative;
+    box-shadow: 0 6px 3px blue;
+}
+
+.second,
+.third {
+    background-color: white;
+    width: 79%;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 65px;
+    margin-left: 45px;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 0 6px 3px blue;
 }
 
 #soleil,
@@ -573,8 +597,8 @@ Artcile sur les activités
 
 #activites {
     /*background-color: cornflowerblue;*/
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 450px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -587,12 +611,13 @@ Artcile sur les activités
 #conteneur5 {
     /*background-color: sienna;*/
     width: 300px;
-    height: 450px;
+    height: 400px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     border-radius: 25px;
+    box-shadow: 0 6px 3px blue;
 }
 
 #activites a {
@@ -619,34 +644,61 @@ Artcile sur les activités
 #conteneur6 {
     /*background-color: sienna;*/
     width: 300px;
-    height: 450px;
+    height: 400px;
+    max-height: 392px;
+    border-radius: 25px;
+}
+
+#haut1 {
+    width: 300px;
+    height: 60%;
+    /*240px*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     border-radius: 25px;
+    box-shadow: 0 6px 3px blue;
 }
 
-#haut,
-#bas {
-    /*background-color: teal;*/
+#bas1 {
     width: 300px;
-    height: 45%;
+    height: 30%;
+    /*120px*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: stretch;
+    justify-content: flex-start;
     border-radius: 25px;
+    box-shadow: 0 6px 3px blue;
 }
 
-#bas {
-    margin-top: 15%;
+#bas1 {
+    margin-top: 40px;
+}
+
+#haut2,
+#bas2 {
+    /*background-color: teal;*/
+    width: 300px;
+    height: 45%;
+    /*180px*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-radius: 25px;
+    box-shadow: 0 6px 3px blue;
+}
+
+#bas2 {
+    margin-top: 40px;
 }
 
 #vieux_port {
     width: 300px;
     height: 80%;
-    max-height: 80%;
+    margin: 0;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
@@ -661,6 +713,7 @@ Artcile sur les activités
     justify-content: flex-start;
     align-items: center;
     padding-left: 15px;
+    margin: 0;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
@@ -710,7 +763,6 @@ Artcile sur les activités
 #calanques {
     width: 300px;
     height: 80%;
-    max-height: 80%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
