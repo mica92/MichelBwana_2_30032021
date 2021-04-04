@@ -33,14 +33,12 @@ body {
 }
 
 #conteneur {
-    background-color: lightcoral;
     width: auto;
     height: auto;
     margin: auto;
 }
 
 header {
-    background-color: khaki;
     width: auto;
     display: flex;
     flex-direction: row;
@@ -51,23 +49,19 @@ header {
 }
 
 #logo {
-    background-color: steelblue;
     width: fit-content;
 }
 
 #navigation {
-    background-color: seagreen;
     width: 33%;
 }
 
 #navigation nav {
-    background-color: chartreuse;
     width: auto;
 }
 
 #navigation ul {
     /*Détermine le comportement flex du bloc nav*/
-    background-color: chocolate;
     width: auto;
     display: flex;
 }
@@ -77,7 +71,6 @@ header {
 }
 
 #navigation li {
-    background-color: white;
     width: auto;
     text-align: center;
     list-style-type: none;
@@ -127,7 +120,6 @@ Body, formulaire, filtres
 }
 
 #formulaire {
-    /*background-color: yellow;*/
     width: 450px;
     display: flex;
     flex-direction: row;
@@ -176,7 +168,6 @@ Filtres
 */
 
 #filtres {
-    background-color: green;
     width: 70%;
     height: 45px;
     display: flex;
@@ -185,7 +176,6 @@ Filtres
 }
 
 #filtres span {
-    background-color: khaki;
     width: fit-content;
     display: flex;
     justify-content: flex-start;
@@ -197,7 +187,6 @@ Filtres
 .familial,
 .romantique,
 .animaux {
-    background-color: tomato;
     width: fit-content;
     min-width: 150px;
     display: flex;
@@ -217,7 +206,6 @@ Filtres
 .child,
 .heart,
 .dog {
-    /*background-color: yellow;*/
     width: 36px;
     height: 45px;
     border-radius: 50%;
@@ -280,7 +268,6 @@ Section principale
 */
 
 #information {
-    /*background-color: sandybrown;*/
     width: fit-content;
     height: 35px;
     display: flex;
@@ -299,7 +286,6 @@ Section principale
 }
 
 .disponibles {
-    /*background-color: aqua;*/
     width: fit-content;
     height: 30px;
     margin-left: 15px;
@@ -308,14 +294,12 @@ Section principale
 }
 
 .icone {
-    /*background-color: #0065FC;*/
     width: 20px;
     height: 20px;
     margin-left: 45px;
 }
 
 #hebergements {
-    /* background-color: yellow; */
     width: auto;
     height: 650px;
     display: flex;
@@ -326,7 +310,6 @@ Section principale
 }
 
 #ancre1 {
-    /*background-color: lightseagreen;*/
     width: fit-content;
     height: 35px;
     padding-top: 15px;
@@ -400,7 +383,6 @@ Section principale
 }
 
 #lieu1 {
-    /*background-color: beige;*/
     width: 250px;
     height: 15px;
     font-weight: bold;
@@ -410,7 +392,6 @@ Section principale
 }
 
 #nuit1 {
-    /*background-color: darkgreen;*/
     width: 250px;
     height: 15px;
     font-size: 0.9em;
@@ -420,7 +401,6 @@ Section principale
 }
 
 #prix1 {
-    /*background-color: cyan;*/
     width: 250px;
     height: 15px;
     font-weight: bold;
@@ -428,7 +408,6 @@ Section principale
 }
 
 #etoiles1 {
-    /*background-color: chartreuse;*/
     width: 250px;
     height: 15px;
     max-width: 250px;
@@ -442,7 +421,6 @@ Section principale
 }
 
 .plus {
-    background-color: indigo;
     width: 150px;
     height: 30px;
     font-weight: bold;
@@ -461,7 +439,6 @@ Section principale
 }
 
 #populaires {
-    /*background-color: blue;*/
     width: 400px;
     height: 35px;
     display: flex;
@@ -528,7 +505,6 @@ Section principale
 }
 
 #pop {
-    /*background-color: fuchsia;*/
     width: 60%;
     height: fit-content;
     display: flex;
@@ -539,7 +515,6 @@ Section principale
 }
 
 #lieu2 {
-    /*background-color: beige;*/
     width: 250px;
     height: 15px;
     font-weight: bold;
@@ -548,7 +523,6 @@ Section principale
 }
 
 #nuit2 {
-    /*background-color: darkgreen;*/
     width: fit-content;
     height: 15px;
     font-size: 0.9em;
@@ -558,7 +532,6 @@ Section principale
 }
 
 #prix2 {
-    /*background-color: cyan;*/
     width: fit-content;
     height: 15px;
     font-weight: bold;
@@ -586,7 +559,6 @@ Artcile sur les activités
 */
 
 #ancre2 {
-    /*background-color: blue;*/
     width: auto;
     height: 35px;
     margin-top: 25px;
@@ -596,7 +568,6 @@ Artcile sur les activités
 }
 
 #activites {
-    /*background-color: cornflowerblue;*/
     width: auto;
     height: 450px;
     display: flex;
@@ -609,7 +580,6 @@ Artcile sur les activités
 
 #conteneur3,
 #conteneur5 {
-    /*background-color: sienna;*/
     width: 300px;
     height: 400px;
     display: flex;
@@ -642,7 +612,6 @@ Artcile sur les activités
 
 #conteneur4,
 #conteneur6 {
-    /*background-color: sienna;*/
     width: 300px;
     height: 400px;
     max-height: 392px;
@@ -679,7 +648,6 @@ Artcile sur les activités
 
 #haut2,
 #bas2 {
-    /*background-color: teal;*/
     width: 300px;
     height: 45%;
     /*180px*/
@@ -831,7 +799,7 @@ Footer
 
 footer {
     background-color: #F2F2F2;
-    width: inherit;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -845,7 +813,6 @@ footer {
 #conteneur7,
 #conteneur8,
 #conteneur9 {
-    /*background-color: tomato;*/
     width: 300px;
     height: auto;
 }
