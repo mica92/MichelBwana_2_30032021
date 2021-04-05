@@ -29,7 +29,6 @@ Entete, logo, navigation
 
 body {
     width: auto;
-    position: relative;
 }
 
 #conteneur {
@@ -853,61 +852,66 @@ MEDIA QUERIES
 ---------------------------------------------------------------------
 */
 
-@media only handheld and (max-width: 375px) {
-    body {
-        display: block;
-        margin: 0;
-    }
+@media all and (max-width: 768px) {
     #conteneur {
+        background-color: orange;
         width: auto;
     }
     #iphone {
+        background-color: palegreen;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
     }
     #logo {
         width: auto;
-        margin-left: 45px;
     }
     #logo img {
         block-size: 75px;
     }
     #inscription {
         width: auto;
-        height: 75px;
+        height: 45px;
         font-weight: bold;
         list-style-type: none;
-        padding-top: 25px;
         position: absolute;
         margin-left: 65%;
-        font-size: xx-large;
+        font-size: x-large;
     }
     #inscription a {
         color: #0065FC;
     }
     header {
-        width: auto;
+        margin-top: 75px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
     }
     #navigation {
-        margin-left: 45px;
+        background-color: aqua;
+        width: fit-content;
+        position: absolute;
     }
     #navigation li {
         width: auto;
+        width: fit-content;
+        margin-right: 39px;
         list-style-type: none;
-        font-size: 2.5em;
-        margin-right: 180px;
     }
-    #hotels,
+    #hotels {
+        color: black;
+        font-weight: normal;
+        font-size: large;
+        font-weight: bold;
+        margin-right: 75px;
+    }
     #loisirs {
         color: black;
         font-weight: normal;
-        margin-right: 275px;
-        font-size: xx-large;
+        font-size: large;
         font-weight: bold;
-    }
-    #hotels {
-        margin-right: 384px;
     }
     #hotels:hover,
     #loisirs:hover {
@@ -921,56 +925,51 @@ MEDIA QUERIES
 Body, formulaire, filtres
 */
     .titres {
-        margin-top: 50px;
+        background-color: bisque;
+        width: auto;
         margin-bottom: 25px;
     }
     .intro {
-        width: 700px;
-        font-size: xxx-large;
-        word-break: break-word;
-        padding-right: 45px;
-        padding-left: 45px;
+        width: auto;
+        font-size: 1.39em;
+        margin-bottom: 25px;
     }
     .sous-intro {
         width: auto;
-        font-size: xx-large;
-        padding-right: 45px;
-        margin-left: 50px;
+        font-size: 1.15em;
     }
     #formulaire {
         width: auto;
         display: flex;
         flex-direction: row;
-        padding-right: 45px;
     }
     .map {
         background-color: #F2F2F2;
-        width: 125px;
+        width: 75px;
         height: 70px;
         display: flex;
         justify-content: center;
         align-items: center;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
-        position: relative;
-        margin-left: 45px;
+        position: absolute;
     }
     #formulaire img {
         width: 20px;
         height: 70px;
     }
     #ville {
-        width: 400px;
+        width: 250px;
         height: 70px;
         border: none;
     }
     #rechercher {
         background-color: #0065FC;
-        width: 150px;
+        width: auto;
         height: 70px;
         border: none;
         font-weight: bold;
-        font-size: 1.1em;
+        font-size: 0.9em;
         color: white;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
@@ -979,17 +978,19 @@ Body, formulaire, filtres
 Filtres
 */
     #filtres {
-        width: 70%;
+        background-color: cornflowerblue;
+        width: auto;
         height: 45px;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         flex-wrap: wrap;
         margin-bottom: 175px;
-        margin-left: 45px;
+        padding-right: 50px;
+        padding-left: 0;
     }
     #filtres span {
-        width: 768px;
+        width: auto;
         font-weight: bold;
         font-size: x-large;
         display: flex;
@@ -999,57 +1000,51 @@ Filtres
     }
     .economique {
         width: fit-content;
-        min-width: 150px;
         display: flex;
-        /* justify-content: flex-start; */
         padding-left: 25px;
         padding-top: 10px;
-        margin-right: 25px;
+        margin-right: 50px;
         border-top-right-radius: 25px;
         border-bottom-right-radius: 25px;
         border-bottom-left-radius: 25px;
         border-top-left-radius: 25px;
         border: 2px solid #F2F2F2;
         font-weight: bold;
+        margin-bottom: 25px;
     }
     .familial {
         width: fit-content;
-        min-width: 150px;
         display: flex;
-        /* justify-content: flex-start; */
         padding-left: 25px;
         padding-top: 10px;
-        margin-right: 145px;
+        margin-right: 50px;
         border-top-right-radius: 25px;
         border-bottom-right-radius: 25px;
         border-bottom-left-radius: 25px;
         border-top-left-radius: 25px;
         border: 2px solid #F2F2F2;
         font-weight: bold;
+        margin-bottom: 25px;
     }
     .romantique {
         width: fit-content;
-        min-width: 150px;
         display: flex;
-        /* justify-content: flex-start; */
         padding-left: 25px;
         padding-top: 10px;
-        margin-right: 145px;
+        margin-right: 245px;
         border-top-right-radius: 25px;
         border-bottom-right-radius: 25px;
         border-bottom-left-radius: 25px;
         border-top-left-radius: 25px;
         border: 2px solid #F2F2F2;
         font-weight: bold;
+        margin-bottom: 25px;
     }
     .animaux {
         width: fit-content;
-        min-width: 150px;
         display: flex;
-        /* justify-content: flex-start; */
         padding-left: 25px;
         padding-top: 10px;
-        /*margin-right: 50px;*/
         border-top-right-radius: 25px;
         border-bottom-right-radius: 25px;
         border-bottom-left-radius: 25px;
@@ -1161,7 +1156,7 @@ Section principale
     }
     #conteneur1 {
         margin-top: 50px;
-        width: 768px;
+        width: 250px;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -1286,7 +1281,7 @@ Section principale
     }
     #conteneur2 {
         background-color: #F2F2F2;
-        width: 768px;
+        width: 250px;
         height: auto;
         display: flex;
         flex-direction: column;
