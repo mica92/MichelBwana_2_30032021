@@ -38,23 +38,45 @@ body {
     margin: auto;
 }
 
+#iphone {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    width: fit-content;
+    margin-left: 45px;
+}
+
+#inscription {
+    width: fit-content;
+    height: auto;
+    font-weight: bold;
+    list-style-type: none;
+    padding-top: 12px;
+    position: absolute;
+    margin-left: 90%;
+}
+
+#inscription a {
+    color: #0065FC;
+    text-decoration: none;
+}
+
 header {
     width: auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-end;
     padding-right: 45px;
     padding-left: 45px;
 }
 
-#logo {
-    width: fit-content;
-}
-
 #navigation {
-    width: 25%;
-    margin-left: 62%;
+    width: fit-content;
+    margin-left: 64%;
+    position: absolute;
 }
 
 #navigation nav {
@@ -88,21 +110,6 @@ header {
 #loisirs:hover {
     color: #0065FC;
     text-decoration: overline;
-}
-
-#inscription {
-    width: fit-content;
-    height: auto;
-    font-weight: bold;
-    text-decoration: none;
-    list-style-type: none;
-    padding-top: 15px;
-    position: absolute;
-    margin-left: 87%;
-}
-
-#inscription a {
-    color: #0065FC;
 }
 
 header a {
@@ -837,4 +844,796 @@ footer ul {
 
 footer li {
     list-style-type: none;
+}
+
+
+/*
+---------------------------------------------------------------------
+MEDIA QUERIES
+---------------------------------------------------------------------
+*/
+
+@media only handheld and (max-width: 375px) {
+    body {
+        display: block;
+        margin: 0;
+    }
+    #conteneur {
+        width: auto;
+    }
+    #iphone {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    #logo {
+        width: auto;
+        margin-left: 45px;
+    }
+    #logo img {
+        block-size: 75px;
+    }
+    #inscription {
+        width: auto;
+        height: 75px;
+        font-weight: bold;
+        list-style-type: none;
+        padding-top: 25px;
+        position: absolute;
+        margin-left: 65%;
+        font-size: xx-large;
+    }
+    #inscription a {
+        color: #0065FC;
+    }
+    header {
+        width: auto;
+    }
+    #navigation {
+        margin-left: 45px;
+    }
+    #navigation li {
+        width: auto;
+        list-style-type: none;
+        font-size: 2.5em;
+        margin-right: 180px;
+    }
+    #hotels,
+    #loisirs {
+        color: black;
+        font-weight: normal;
+        margin-right: 275px;
+        font-size: xx-large;
+        font-weight: bold;
+    }
+    #hotels {
+        margin-right: 384px;
+    }
+    #hotels:hover,
+    #loisirs:hover {
+        color: #0065FC;
+        text-decoration: underline;
+    }
+    header a {
+        text-decoration: none;
+    }
+    /*
+Body, formulaire, filtres
+*/
+    .titres {
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+    .intro {
+        width: 700px;
+        font-size: xxx-large;
+        word-break: break-word;
+        padding-right: 45px;
+        padding-left: 45px;
+    }
+    .sous-intro {
+        width: auto;
+        font-size: xx-large;
+        padding-right: 45px;
+        margin-left: 50px;
+    }
+    #formulaire {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        padding-right: 45px;
+    }
+    .map {
+        background-color: #F2F2F2;
+        width: 125px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        position: relative;
+        margin-left: 45px;
+    }
+    #formulaire img {
+        width: 20px;
+        height: 70px;
+    }
+    #ville {
+        width: 400px;
+        height: 70px;
+        border: none;
+    }
+    #rechercher {
+        background-color: #0065FC;
+        width: 150px;
+        height: 70px;
+        border: none;
+        font-weight: bold;
+        font-size: 1.1em;
+        color: white;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    /*
+Filtres
+*/
+    #filtres {
+        width: 70%;
+        height: 45px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 175px;
+        margin-left: 45px;
+    }
+    #filtres span {
+        width: 768px;
+        font-weight: bold;
+        font-size: x-large;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    .economique {
+        width: fit-content;
+        min-width: 150px;
+        display: flex;
+        /* justify-content: flex-start; */
+        padding-left: 25px;
+        padding-top: 10px;
+        margin-right: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-top-left-radius: 25px;
+        border: 2px solid #F2F2F2;
+        font-weight: bold;
+    }
+    .familial {
+        width: fit-content;
+        min-width: 150px;
+        display: flex;
+        /* justify-content: flex-start; */
+        padding-left: 25px;
+        padding-top: 10px;
+        margin-right: 145px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-top-left-radius: 25px;
+        border: 2px solid #F2F2F2;
+        font-weight: bold;
+    }
+    .romantique {
+        width: fit-content;
+        min-width: 150px;
+        display: flex;
+        /* justify-content: flex-start; */
+        padding-left: 25px;
+        padding-top: 10px;
+        margin-right: 145px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-top-left-radius: 25px;
+        border: 2px solid #F2F2F2;
+        font-weight: bold;
+    }
+    .animaux {
+        width: fit-content;
+        min-width: 150px;
+        display: flex;
+        /* justify-content: flex-start; */
+        padding-left: 25px;
+        padding-top: 10px;
+        /*margin-right: 50px;*/
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-top-left-radius: 25px;
+        border: 2px solid #F2F2F2;
+        font-weight: bold;
+    }
+    .bill,
+    .child,
+    .heart,
+    .dog {
+        width: 36px;
+        height: 45px;
+        border-radius: 50%;
+        right: 26.5px;
+        bottom: 15px;
+        position: relative;
+    }
+    .fa-money-bill-wave {
+        background-color: #c1d5f3;
+        color: #2e69c2;
+        width: inherit;
+        height: 30px;
+        border-radius: 50%;
+        position: relative;
+        padding-top: 15px;
+        margin-top: 2.5px;
+        text-align: center;
+    }
+    .fa-child {
+        background-color: #c1d5f3;
+        color: #2e69c2;
+        width: inherit;
+        height: 30px;
+        border-radius: 50%;
+        position: relative;
+        padding-top: 15px;
+        margin-top: 2.5px;
+        text-align: center;
+    }
+    .fa-heart {
+        background-color: #c1d5f3;
+        color: #2e69c2;
+        width: inherit;
+        height: 30px;
+        border-radius: 50%;
+        position: relative;
+        padding-top: 15px;
+        margin-top: 2.5px;
+        text-align: center;
+    }
+    .fa-dog {
+        background-color: #c1d5f3;
+        color: #2e69c2;
+        width: inherit;
+        height: 30px;
+        border-radius: 50%;
+        position: relative;
+        padding-top: 15px;
+        margin-top: 2.5px;
+        text-align: center;
+    }
+    /*
+Section principale
+*/
+    #information {
+        width: fit-content;
+        height: 35px;
+        display: flex;
+        padding-right: 45px;
+    }
+    .fa-info-circle {
+        color: #0065FC;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        padding-left: 5px;
+        position: relative;
+        top: 3px;
+    }
+    .disponibles {
+        width: fit-content;
+        height: 30px;
+        margin-left: 15px;
+        position: relative;
+        top: 3px;
+    }
+    .icone {
+        width: 20px;
+        height: 20px;
+        margin-left: 45px;
+    }
+    #hebergements {
+        width: 768px;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        /* padding-right: 45px; */
+        padding-left: 90px;
+    }
+    #ancre1 {
+        width: fit-content;
+        font-size: x-large;
+        height: 35px;
+        padding-top: 15px;
+        position: relative;
+        bottom: 2360px;
+    }
+    #conteneur1 {
+        margin-top: 50px;
+        width: 768px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    #conteneur1_haut {
+        width: 88%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-top: 120px;
+        position: relative;
+        justify-content: space-between;
+    }
+    #conteneur1_bas {
+        width: 88%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        position: relative;
+        justify-content: space-between;
+    }
+    #conteneur1 a {
+        color: black;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    #conteneur1 a:active {
+        color: black;
+    }
+    .element1,
+    .element2,
+    .element4,
+    .element5 {
+        width: 100%;
+        height: 240px;
+        display: flex;
+        margin-bottom: 65px;
+        background-color: white;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-top: 65px;
+        border-radius: 25px;
+        position: relative;
+        box-shadow: 0 6px 3px blue;
+    }
+    .element3,
+    .element6 {
+        width: 100%;
+        height: 240px;
+        display: flex;
+        margin-bottom: 65px;
+        background-color: white;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-top: 65px;
+        border-radius: 25px;
+        position: relative;
+        box-shadow: 0 6px 3px blue;
+    }
+    #cannebiere,
+    #du_port,
+    #mouettes,
+    #mer,
+    #panier,
+    #amina {
+        width: 136px;
+        height: 60%;
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-left: 5px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+    #lieu1 {
+        width: 250px;
+        height: 15px;
+        font-weight: bold;
+        padding-left: 5px;
+        margin-bottom: 5px;
+        border-radius: 25px;
+    }
+    #nuit1 {
+        width: 250px;
+        height: 15px;
+        font-size: 0.9em;
+        padding-left: 5px;
+        margin-bottom: 5px;
+        border-radius: 25px;
+    }
+    #prix1 {
+        width: 250px;
+        height: 15px;
+        font-weight: bold;
+        border-radius: 25px;
+    }
+    #etoiles1 {
+        width: 250px;
+        height: 15px;
+        max-width: 250px;
+        max-height: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: space-between;
+        padding-left: 5px;
+        border-radius: 25px;
+    }
+    .plus {
+        width: 150px;
+        height: 30px;
+        font-weight: bold;
+        font-size: 1.25em;
+        margin-top: 25px;
+        position: relative;
+    }
+    #conteneur2 {
+        background-color: #F2F2F2;
+        width: 768px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        border-radius: 25px;
+    }
+    #populaires {
+        width: 725px;
+        height: 35px;
+        font-size: x-large;
+        display: flex;
+        flex-direction: row;
+        justify-self: flex-start;
+        margin-left: 45px;
+        padding-top: 15px;
+        position: absolute;
+    }
+    #chart {
+        width: 60px;
+        height: 30px;
+        padding-left: 415px;
+        margin-bottom: 15px;
+    }
+    .first {
+        background-color: white;
+        width: 88%;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-top: 120px;
+        margin-left: 45px;
+        border-radius: 25px;
+        position: relative;
+        box-shadow: 0 6px 3px blue;
+    }
+    .second,
+    .third {
+        background-color: white;
+        width: 88%;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-top: 65px;
+        margin-left: 45px;
+        border-radius: 25px;
+        position: relative;
+        box-shadow: 0 6px 3px blue;
+    }
+    #soleil,
+    #coeur_eau {
+        width: 40%;
+        height: 210px;
+        /* max-height: 170px; */
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+    #bleu_blanc {
+        width: 40%;
+        height: 210px;
+        /* max-height: 170px; */
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+    #pop {
+        width: 60%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        border-radius: 25px;
+    }
+    #lieu2 {
+        width: 250px;
+        height: 15px;
+        font-size: 1.25em;
+        font-weight: bold;
+        padding-left: 15px;
+        padding-top: 20px;
+        border-radius: 25px;
+    }
+    #nuit2 {
+        width: fit-content;
+        height: 15px;
+        font-size: 1.15em;
+        margin-top: 40px;
+        padding-left: 15px;
+        border-radius: 25px;
+    }
+    #prix2 {
+        width: fit-content;
+        height: 15px;
+        font-weight: bold;
+        border-radius: 25px;
+    }
+    #etoiles2 {
+        /*background-color: chartreuse;*/
+        width: 250px;
+        height: 20px;
+        max-width: 250px;
+        max-height: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: space-between;
+        padding-left: 15px;
+        margin-top: 78px;
+        border-radius: 25px;
+    }
+    /*
+Artcile sur les activités
+*/
+    #ancre2 {
+        width: auto;
+        font-size: xx-large;
+        height: 35px;
+        padding-right: 45px;
+        position: relative;
+    }
+    #activites {
+        width: auto;
+        height: 450px;
+        padding-right: 45px;
+    }
+    #conteneur3,
+    #conteneur5 {
+        width: 300px;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        border-radius: 25px;
+        box-shadow: 0 6px 3px blue;
+    }
+    #activites a {
+        color: black;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    #activites a {
+        color: black;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    #activites a:active {
+        color: black;
+    }
+    #activites a:active {
+        color: black;
+    }
+    #conteneur4,
+    #conteneur6 {
+        width: 300px;
+        height: 400px;
+        max-height: 392px;
+        border-radius: 25px;
+    }
+    #haut1 {
+        width: 300px;
+        height: 60%;
+        /*240px*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        border-radius: 25px;
+        box-shadow: 0 6px 3px blue;
+    }
+    #bas1 {
+        width: 300px;
+        height: 30%;
+        /*120px*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        border-radius: 25px;
+        box-shadow: 0 6px 3px blue;
+    }
+    #bas1 {
+        margin-top: 40px;
+    }
+    #haut2,
+    #bas2 {
+        width: 300px;
+        height: 45%;
+        /*180px*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        border-radius: 25px;
+        box-shadow: 0 6px 3px blue;
+    }
+    #bas2 {
+        margin-top: 40px;
+    }
+    #vieux_port {
+        width: 300px;
+        height: 80%;
+        margin: 0;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+    .port {
+        background-color: white;
+        width: 300px;
+        height: 20%;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 15px;
+        margin: 0;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    #pomegue {
+        width: 300px;
+        height: 80%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+    .fort {
+        background-color: white;
+        width: 300px;
+        height: 20%;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 15px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    #frioul {
+        width: 300px;
+        height: 80%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+    .iles {
+        background-color: white;
+        width: 300px;
+        height: 20%;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 15px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    #calanques {
+        width: 300px;
+        height: 80%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+    .parc_national {
+        background-color: white;
+        width: 300px;
+        height: 20%;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 15px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    #notre_dame {
+        width: 300px;
+        height: 80%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+    .dame {
+        background-color: white;
+        width: 300px;
+        height: 20%;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 15px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    #parc_lc {
+        width: 300px;
+        height: 80%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+    .longchamp {
+        background-color: white;
+        width: 300px;
+        height: 20%;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding-bottom: 0;
+        padding-left: 15px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    /*
+Footer
+*/
+    footer {
+        background-color: #F2F2F2;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: flex-start;
+        padding-right: 45px;
+        position: relative;
+        top: 1250px;
+    }
+    #conteneur7,
+    #conteneur8,
+    #conteneur9 {
+        width: 300px;
+        height: auto;
+    }
+    footer h4 {
+        padding-left: 0;
+    }
+    footer ul {
+        padding-left: 0;
+    }
+    footer li {
+        list-style-type: none;
+    }
 }
