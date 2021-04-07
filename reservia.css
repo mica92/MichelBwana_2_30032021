@@ -866,6 +866,7 @@ MEDIA QUERIES
     }
     #logo {
         width: auto;
+        margin-left: 0;
     }
     #logo img {
         block-size: 75px;
@@ -883,11 +884,15 @@ MEDIA QUERIES
         color: #0065FC;
     }
     header {
+        width: fit-content;
         margin-top: 75px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: flex-end;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 45px;
     }
     #navigation {
         background-color: aqua;
@@ -933,15 +938,21 @@ Body, formulaire, filtres
         width: auto;
         font-size: 1.39em;
         margin-bottom: 25px;
+        padding-right: 0;
+        padding-left: 0%;
     }
     .sous-intro {
         width: auto;
         font-size: 1.15em;
+        padding-right: 0;
+        padding-left: 0;
     }
     #formulaire {
         width: auto;
         display: flex;
         flex-direction: row;
+        padding-right: 0;
+        padding-left: 0%;
     }
     .map {
         background-color: #F2F2F2;
@@ -985,7 +996,7 @@ Filtres
         flex-direction: row;
         justify-content: flex-start;
         flex-wrap: wrap;
-        margin-bottom: 175px;
+        margin-bottom: 300px;
         padding-right: 50px;
         padding-left: 0;
     }
@@ -996,6 +1007,7 @@ Filtres
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        margin-right: 450px;
         margin-bottom: 25px;
     }
     .economique {
@@ -1114,7 +1126,8 @@ Section principale
         width: fit-content;
         height: 35px;
         display: flex;
-        padding-right: 45px;
+        padding-right: 0;
+        padding-left: 0%;
     }
     .fa-info-circle {
         color: #0065FC;
@@ -1138,13 +1151,12 @@ Section principale
         margin-left: 45px;
     }
     #hebergements {
-        width: 768px;
+        width: auto;
         height: auto;
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
-        /* padding-right: 45px; */
-        padding-left: 90px;
+        padding-left: 0%;
     }
     #ancre1 {
         width: fit-content;
@@ -1281,7 +1293,7 @@ Section principale
     }
     #conteneur2 {
         background-color: #F2F2F2;
-        width: 250px;
+        width: auto;
         height: auto;
         display: flex;
         flex-direction: column;
