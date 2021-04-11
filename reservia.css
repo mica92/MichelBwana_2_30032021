@@ -44,7 +44,7 @@ body {
 
 .logo {
     width: fit-content;
-    margin-left: 45px;
+    margin-left: 30px;
 }
 
 .inscription {
@@ -54,7 +54,7 @@ body {
     list-style-type: none;
     padding-top: 12px;
     position: absolute;
-    margin-left: 90%;
+    margin-left: 88%;
 }
 
 .inscription a {
@@ -102,7 +102,7 @@ header {
 .loisirs {
     color: black;
     font-weight: normal;
-    margin-right: 58px;
+    margin-right: 50px;
 }
 
 .hotels:hover,
@@ -122,16 +122,16 @@ Body, formulaire, filtres
 
 .intro {
     width: auto;
-    padding-right: 45px;
-    padding-left: 45px;
+    padding-right: 30px;
+    padding-left: 30px;
     margin: 0;
 }
 
 .sous-intro {
     width: auto;
     font-size: 1.05em;
-    padding-right: 45px;
-    padding-left: 45px;
+    padding-right: 30px;
+    padding-left: 30px;
     margin: 0;
 }
 
@@ -139,8 +139,8 @@ Body, formulaire, filtres
     width: 450px;
     display: flex;
     flex-direction: row;
-    padding-right: 45px;
-    padding-left: 45px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .map {
@@ -191,7 +191,8 @@ Filtres
     height: 45px;
     display: flex;
     justify-content: space-between;
-    padding-left: 45px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .mes_filtres {
@@ -288,8 +289,8 @@ Section principale
     width: fit-content;
     height: 35px;
     display: flex;
-    padding-right: 45px;
-    padding-left: 45px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .fa-info-circle {
@@ -310,12 +311,6 @@ Section principale
     top: 3px;
 }
 
-.icone {
-    width: 20px;
-    height: 20px;
-    margin-left: 45px;
-}
-
 .hebergements {
     width: 99%;
     height: 650px;
@@ -327,15 +322,16 @@ Section principale
     width: fit-content;
     height: 45px;
     padding-top: 15px;
-    margin-left: 30px;
+    margin-left: 75px;
     position: absolute;
 }
 
 .conteneur1 {
     background-color: #F2F2F2;
-    width: 65%;
+    width: 64%;
     height: auto;
     padding: 100px 30px 30px 30px;
+    margin-left: 30px;
     border-radius: 25px;
 }
 
@@ -366,7 +362,7 @@ Section principale
 .element5 {
     background-color: white;
     width: 275px;
-    height: 220px;
+    height: 200px;
     margin-right: 25px;
     border-radius: 25px;
     box-shadow: 0 6px 3px #F2F2F2;
@@ -376,7 +372,7 @@ Section principale
 .element6 {
     background-color: white;
     width: 275px;
-    height: 220px;
+    height: 200px;
     border-radius: 25px;
     box-shadow: 0 6px 3px #F2F2F2;
 }
@@ -397,38 +393,39 @@ Section principale
 }
 
 .lieu1 {
-    width: 250px;
+    width: auto;
     height: 15px;
     font-weight: bold;
-    margin-top: 10px;
+    padding-top: 5px;
     padding-left: 15px;
     border-radius: 25px;
 }
 
 .nuit1 {
-    width: 250px;
+    width: auto;
     height: 15px;
     font-size: 0.9em;
+    padding-top: 5px;
     padding-left: 15px;
     border-radius: 25px;
 }
 
 .prix1 {
-    width: 250px;
+    width: auto;
     height: 15px;
     font-weight: bold;
+    padding-top: 5px;
     border-radius: 25px;
 }
 
 .etoiles1 {
-    width: 250px;
+    width: auto;
     height: 15px;
-    max-width: 250px;
-    max-height: 15px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-content: space-between;
+    padding-top: 8px;
     padding-left: 15px;
     border-radius: 25px;
 }
@@ -442,16 +439,18 @@ Section principale
     height: 30px;
     font-weight: bold;
     margin-top: 25px;
+    margin-left: 5px;
     position: relative;
 }
 
 .conteneur2 {
     background-color: #F2F2F2;
-    width: 29%;
+    width: 25%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
+    margin-right: 30px;
     border-radius: 25px;
 }
 
@@ -469,8 +468,7 @@ Section principale
 .chart {
     width: 25px;
     height: 25px;
-    padding-left: 150px;
-    margin-bottom: 15px;
+    padding-left: 90px;
 }
 
 .first {
@@ -532,9 +530,10 @@ Section principale
 }
 
 .lieu2 {
-    width: 250px;
+    width: auto;
     height: 15px;
     font-weight: bold;
+    padding-top: 10px;
     padding-left: 15px;
     border-radius: 25px;
 }
@@ -543,7 +542,7 @@ Section principale
     width: fit-content;
     height: 15px;
     font-size: 0.9em;
-    margin-top: 25px;
+    padding-top: 30px;
     padding-left: 15px;
     border-radius: 25px;
 }
@@ -557,16 +556,14 @@ Section principale
 
 .etoiles2 {
     /*background-color: chartreuse;*/
-    width: 250px;
+    width: auto;
     height: 15px;
-    max-width: 250px;
-    max-height: 15px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-content: space-between;
+    padding-top: 30px;
     padding-left: 15px;
-    margin-top: 45px;
     border-radius: 25px;
 }
 
@@ -579,8 +576,8 @@ Artcile sur les activités
     width: auto;
     height: 35px;
     margin-top: 25px;
-    padding-right: 45px;
-    padding-left: 45px;
+    padding-right: 30px;
+    padding-left: 30px;
     position: relative;
 }
 
@@ -590,19 +587,19 @@ Artcile sur les activités
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-right: 45px;
-    padding-left: 45px;
+    justify-content: flex-start;
+    padding-left: 30px;
 }
 
 .conteneur3,
 .conteneur5 {
-    width: 300px;
+    width: 317px;
     height: 400px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin-right: 51px;
     border-radius: 25px;
     box-shadow: 0 6px 3px #F2F2F2;
 }
@@ -629,32 +626,33 @@ Artcile sur les activités
 
 .conteneur4,
 .conteneur6 {
-    width: 300px;
+    width: 317px;
     height: 400px;
     max-height: 392px;
+    margin-right: 51px;
     border-radius: 25px;
 }
 
 .haut1 {
-    width: 300px;
+    width: 317px;
     height: 60%;
-    /*240px*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin-right: 51px;
     border-radius: 25px;
     box-shadow: 0 6px 3px #F2F2F2;
 }
 
 .bas1 {
-    width: 300px;
+    width: 317px;
     height: 30%;
-    /*120px*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin-right: 51px;
     border-radius: 25px;
     box-shadow: 0 6px 3px #F2F2F2;
 }
@@ -665,9 +663,8 @@ Artcile sur les activités
 
 .haut2,
 .bas2 {
-    width: 300px;
+    width: 317px;
     height: 45%;
-    /*180px*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -681,16 +678,16 @@ Artcile sur les activités
 }
 
 .vieux_port {
-    width: 300px;
+    width: 317px;
     height: 80%;
-    margin: 0;
+    margin-right: 51px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
 
 .port {
     background-color: white;
-    width: 300px;
+    width: 317px;
     height: 20%;
     font-weight: bold;
     display: flex;
@@ -698,21 +695,21 @@ Artcile sur les activités
     justify-content: flex-start;
     align-items: center;
     padding-left: 15px;
-    margin: 0;
+    margin-right: 51px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
 
 .pomegue {
-    width: 300px;
+    width: 317px;
     height: 80%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
 
-#Fort {
+.fort {
     background-color: white;
-    width: 300px;
+    width: 317px;
     height: 20%;
     font-weight: bold;
     display: flex;
@@ -725,7 +722,7 @@ Artcile sur les activités
 }
 
 .frioul {
-    width: 300px;
+    width: 317px;
     height: 80%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -733,7 +730,7 @@ Artcile sur les activités
 
 .iles {
     background-color: white;
-    width: 300px;
+    width: 317px;
     height: 20%;
     font-weight: bold;
     display: flex;
@@ -746,7 +743,7 @@ Artcile sur les activités
 }
 
 .calanques {
-    width: 300px;
+    width: 317px;
     height: 80%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -754,7 +751,7 @@ Artcile sur les activités
 
 .parc_national {
     background-color: white;
-    width: 300px;
+    width: 317px;
     height: 20%;
     font-weight: bold;
     display: flex;
@@ -767,7 +764,7 @@ Artcile sur les activités
 }
 
 .notre_dame {
-    width: 300px;
+    width: 317px;
     height: 80%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -775,7 +772,7 @@ Artcile sur les activités
 
 .dame {
     background-color: white;
-    width: 300px;
+    width: 317px;
     height: 20%;
     font-weight: bold;
     display: flex;
@@ -788,7 +785,7 @@ Artcile sur les activités
 }
 
 .parc_lc {
-    width: 300px;
+    width: 317px;
     height: 80%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -796,7 +793,7 @@ Artcile sur les activités
 
 .longchamp {
     background-color: white;
-    width: 300px;
+    width: 317px;
     height: 20%;
     font-weight: bold;
     display: flex;
@@ -822,15 +819,15 @@ footer {
     flex-direction: row;
     justify-content: flex-start;
     align-content: flex-start;
-    padding-right: 45px;
-    padding-left: 45px;
+    padding-right: 30px;
+    padding-left: 30px;
     position: relative;
 }
 
 .conteneur7,
 .conteneur8,
 .conteneur9 {
-    width: 300px;
+    width: 315px;
     height: auto;
 }
 
@@ -1148,11 +1145,6 @@ Section principale
         position: relative;
         top: 3px;
     }
-    .icone {
-        width: 20px;
-        height: 20px;
-        margin-left: 45px;
-    }
     .hebergements {
         width: auto;
         height: auto;
@@ -1425,7 +1417,7 @@ Artcile sur les activités
     }
     .conteneur3,
     .conteneur5 {
-        width: 300px;
+        width: 315px;
         height: 400px;
         display: flex;
         flex-direction: row;
@@ -1452,13 +1444,13 @@ Artcile sur les activités
     }
     .conteneur4,
     .conteneur6 {
-        width: 300px;
+        width: 315px;
         height: 400px;
         max-height: 392px;
         border-radius: 25px;
     }
     .haut1 {
-        width: 300px;
+        width: 315px;
         height: 60%;
         /*240px*/
         display: flex;
@@ -1469,7 +1461,7 @@ Artcile sur les activités
         box-shadow: 0 6px 3px blue;
     }
     .bas1 {
-        width: 300px;
+        width: 315px;
         height: 30%;
         /*120px*/
         display: flex;
@@ -1484,7 +1476,7 @@ Artcile sur les activités
     }
     .haut2,
     .bas2 {
-        width: 300px;
+        width: 315px;
         height: 45%;
         /*180px*/
         display: flex;
@@ -1498,7 +1490,7 @@ Artcile sur les activités
         margin-top: 40px;
     }
     .vieux_port {
-        width: 300px;
+        width: 315px;
         height: 80%;
         margin: 0;
         border-top-left-radius: 25px;
@@ -1506,7 +1498,7 @@ Artcile sur les activités
     }
     .port {
         background-color: white;
-        width: 300px;
+        width: 315px;
         height: 20%;
         font-weight: bold;
         display: flex;
@@ -1519,14 +1511,14 @@ Artcile sur les activités
         border-bottom-right-radius: 25px;
     }
     .pomegue {
-        width: 300px;
+        width: 315px;
         height: 80%;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
     }
-    #Fort {
+    .fort {
         background-color: white;
-        width: 300px;
+        width: 315px;
         height: 20%;
         font-weight: bold;
         display: flex;
@@ -1538,14 +1530,14 @@ Artcile sur les activités
         border-bottom-right-radius: 25px;
     }
     .frioul {
-        width: 300px;
+        width: 315px;
         height: 80%;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
     }
     .iles {
         background-color: white;
-        width: 300px;
+        width: 315px;
         height: 20%;
         font-weight: bold;
         display: flex;
@@ -1557,14 +1549,14 @@ Artcile sur les activités
         border-bottom-right-radius: 25px;
     }
     .calanques {
-        width: 300px;
+        width: 315px;
         height: 80%;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
     }
     .parc_national {
         background-color: white;
-        width: 300px;
+        width: 315px;
         height: 20%;
         font-weight: bold;
         display: flex;
@@ -1576,14 +1568,14 @@ Artcile sur les activités
         border-bottom-right-radius: 25px;
     }
     .notre_dame {
-        width: 300px;
+        width: 315px;
         height: 80%;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
     }
     .dame {
         background-color: white;
-        width: 300px;
+        width: 315px;
         height: 20%;
         font-weight: bold;
         display: flex;
@@ -1595,14 +1587,14 @@ Artcile sur les activités
         border-bottom-right-radius: 25px;
     }
     .parc_lc {
-        width: 300px;
+        width: 315px;
         height: 80%;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
     }
     .longchamp {
         background-color: white;
-        width: 300px;
+        width: 315px;
         height: 20%;
         font-weight: bold;
         display: flex;
@@ -1632,7 +1624,7 @@ Footer
     .conteneur7,
     .conteneur8,
     .conteneur9 {
-        width: 300px;
+        width: 315px;
         height: auto;
     }
     footer h4 {
