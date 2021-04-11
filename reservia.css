@@ -232,7 +232,7 @@ Filtres
 }
 
 .fa-money-bill-wave {
-    background-color: #c1d5f3;
+    background-color: #DEEBFF;
     color: .2e69c2;
     width: 40px;
     height: 30px;
@@ -244,7 +244,7 @@ Filtres
 }
 
 .fa-child {
-    background-color: #c1d5f3;
+    background-color: #DEEBFF;
     color: .2e69c2;
     width: 40px;
     height: 30px;
@@ -256,7 +256,7 @@ Filtres
 }
 
 .fa-heart {
-    background-color: #c1d5f3;
+    background-color: #DEEBFF;
     color: .2e69c2;
     width: 40px;
     height: 30px;
@@ -268,7 +268,7 @@ Filtres
 }
 
 .fa-dog {
-    background-color: #c1d5f3;
+    background-color: #DEEBFF;
     color: .2e69c2;
     width: 40px;
     height: 30px;
@@ -366,19 +366,19 @@ Section principale
 .element5 {
     background-color: white;
     width: 275px;
-    height: 200px;
+    height: 220px;
     margin-right: 25px;
     border-radius: 25px;
-    box-shadow: 0 6px 3px blue;
+    box-shadow: 0 6px 3px #F2F2F2;
 }
 
 .element3,
 .element6 {
     background-color: white;
     width: 275px;
-    height: 200px;
+    height: 220px;
     border-radius: 25px;
-    box-shadow: 0 6px 3px blue;
+    box-shadow: 0 6px 3px #F2F2F2;
 }
 
 .cannebiere,
@@ -400,8 +400,8 @@ Section principale
     width: 250px;
     height: 15px;
     font-weight: bold;
-    padding-left: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    padding-left: 15px;
     border-radius: 25px;
 }
 
@@ -409,8 +409,7 @@ Section principale
     width: 250px;
     height: 15px;
     font-size: 0.9em;
-    padding-left: 5px;
-    margin-bottom: 5px;
+    padding-left: 15px;
     border-radius: 25px;
 }
 
@@ -430,8 +429,12 @@ Section principale
     flex-direction: row;
     justify-content: flex-start;
     align-content: space-between;
-    padding-left: 5px;
+    padding-left: 15px;
     border-radius: 25px;
+}
+
+.fas.fa-star {
+    color: #0065FC;
 }
 
 .plus {
@@ -482,7 +485,7 @@ Section principale
     margin-left: 45px;
     border-radius: 25px;
     position: relative;
-    box-shadow: 0 6px 3px blue;
+    box-shadow: 0 6px 3px #F2F2F2;
 }
 
 .second,
@@ -498,7 +501,7 @@ Section principale
     margin-left: 45px;
     border-radius: 25px;
     position: relative;
-    box-shadow: 0 6px 3px blue;
+    box-shadow: 0 6px 3px #F2F2F2;
 }
 
 .soleil,
@@ -601,7 +604,7 @@ Artcile sur les activités
     flex-wrap: wrap;
     justify-content: flex-start;
     border-radius: 25px;
-    box-shadow: 0 6px 3px blue;
+    box-shadow: 0 6px 3px #F2F2F2;
 }
 
 .activites a {
@@ -641,7 +644,7 @@ Artcile sur les activités
     flex-wrap: wrap;
     justify-content: flex-start;
     border-radius: 25px;
-    box-shadow: 0 6px 3px blue;
+    box-shadow: 0 6px 3px #F2F2F2;
 }
 
 .bas1 {
@@ -653,7 +656,7 @@ Artcile sur les activités
     flex-wrap: wrap;
     justify-content: flex-start;
     border-radius: 25px;
-    box-shadow: 0 6px 3px blue;
+    box-shadow: 0 6px 3px #F2F2F2;
 }
 
 .bas1 {
@@ -670,7 +673,7 @@ Artcile sur les activités
     flex-wrap: wrap;
     justify-content: flex-start;
     border-radius: 25px;
-    box-shadow: 0 6px 3px blue;
+    box-shadow: 0 6px 3px #F2F2F2;
 }
 
 .bas2 {
