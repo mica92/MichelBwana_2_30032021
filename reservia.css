@@ -856,6 +856,9 @@ MEDIA QUERIES
             width: fit-content;
             margin-left: 15px;
         }
+        .logo img {
+            block-size: 175px;
+        }
         .inscription {
             background-color: yellow;
             width: fit-content;
