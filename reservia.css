@@ -857,7 +857,7 @@ MEDIA QUERIES
             margin-left: 15px;
         }
         .logo img {
-            block-size: 175px;
+            block-size: 100px;
         }
         .inscription {
             background-color: yellow;
@@ -916,8 +916,8 @@ MEDIA QUERIES
             text-decoration: none;
         }
         /*
-    Body, formulaire, filtres
-    */
+Body, formulaire, filtres
+*/
         .intro {
             background-color: seagreen;
             width: 95%;
@@ -977,8 +977,8 @@ MEDIA QUERIES
             border-top-left-radius: 15px;
         }
         /*
-    Filtres
-    */
+Filtres
+*/
         .filtres {
             width: 25%;
             height: 45px;
@@ -1132,8 +1132,8 @@ MEDIA QUERIES
             text-align: center;
         }
         /*
-    Section principale
-    */
+Section principale
+*/
         .information {
             width: 95%;
             height: 35px;
@@ -1402,8 +1402,8 @@ MEDIA QUERIES
             border-radius: 25px;
         }
         /*
-    Artcile sur les activités
-    */
+Artcile sur les activités
+*/
         #ancre2 {
             background-color: olivedrab;
             width: auto;
@@ -1618,8 +1618,8 @@ MEDIA QUERIES
             border-bottom-right-radius: 25px;
         }
         /*
-    Footer
-    */
+Footer
+*/
         footer {
             background-color: #F2F2F2;
             width: 95%;
