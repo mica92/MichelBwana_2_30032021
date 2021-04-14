@@ -835,7 +835,7 @@ MEDIA QUERIES
 ---------------------------------------------------------------------
 */
     
-    @media all and (max-width: 1450px) {
+    @media all and (max-width: 1090px) {
         body {
             width: 99%;
         }
