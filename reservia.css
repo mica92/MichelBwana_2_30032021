@@ -75,7 +75,12 @@ header {
     list-style-type: none;
 }
 
-.hotels,
+.hotels {
+    color: black;
+    font-weight: normal;
+    margin-right: 85px;
+}
+
 .loisirs {
     color: black;
     font-weight: normal;
@@ -359,20 +364,19 @@ Section principale
 .element4,
 .element5 {
     background-color: white;
-    width: 275px;
+    width: 30%;
     height: 200px;
-    margin-right: 25px;
     border-radius: 25px;
-    box-shadow: 0 6px 3px #F2F2F2;
+    box-shadow: 0 6px 3px #f2f2f2;
 }
 
 .element3,
 .element6 {
     background-color: white;
-    width: 275px;
+    width: 30%;
     height: 200px;
     border-radius: 25px;
-    box-shadow: 0 6px 3px #F2F2F2;
+    box-shadow: 0 6px 3px #f2f2f2;
 }
 
 .cannebiere,
@@ -381,8 +385,8 @@ Section principale
 .mer,
 .panier,
 .amina {
-    width: 265px;
-    height: 60%;
+    width: 96.5%;
+    height: 55%;
     padding-top: 5px;
     padding-right: 5px;
     padding-left: 5px;
@@ -391,19 +395,19 @@ Section principale
 }
 
 .lieu1 {
-    width: auto;
-    height: 15px;
+    background-color: darkgoldenrod;
+    width: 95%;
+    height: 5%;
     font-weight: bold;
-    padding-top: 5px;
     padding-left: 15px;
     border-radius: 25px;
 }
 
 .nuit1 {
-    width: auto;
-    height: 15px;
+    background-color: cornflowerblue;
+    width: 95%;
+    height: 5%;
     font-size: 0.9em;
-    padding-top: 5px;
     padding-left: 15px;
     border-radius: 25px;
 }
@@ -417,13 +421,13 @@ Section principale
 }
 
 .etoiles1 {
-    width: auto;
-    height: 15px;
+    background-color: chartreuse;
+    width: 95%;
+    height: 5%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-content: space-between;
-    padding-top: 8px;
     padding-left: 15px;
     border-radius: 25px;
 }
@@ -436,7 +440,8 @@ Section principale
     width: 150px;
     height: 30px;
     font-weight: bold;
-    margin-top: 25px;
+    font-size: 1.1em;
+    margin-top: 45px;
     margin-left: 5px;
     position: relative;
 }
@@ -467,6 +472,16 @@ Section principale
 
 .chart img {
     width: 25px;
+}
+
+.pop {
+    background-color: crimson;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .first {
@@ -514,17 +529,6 @@ Section principale
     max-height: 125px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-}
-
-.pop {
-    background-color: crimson;
-    width: 60%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    border-radius: 25px;
 }
 
 .lieu2 {
