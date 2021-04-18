@@ -1249,7 +1249,7 @@ Iphone8
         border-radius: 25px;
     }
     .populaires {
-        width: auto;
+        width: 88%;
         display: flex;
         justify-content: flex-start;
         padding-top: 15px;
