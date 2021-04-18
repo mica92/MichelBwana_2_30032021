@@ -1015,13 +1015,13 @@ Iphone8
     .hotels {
         color: black;
         font-weight: normal;
-        font-size: 2.5em;
+        font-size: 2.25em;
         text-align: left;
     }
     .loisirs {
         color: black;
         font-weight: normal;
-        font-size: 2.5em;
+        font-size: 2.25em;
         text-align: center;
         padding-left: 60px;
     }
@@ -1047,14 +1047,14 @@ Iphone8
     Body, formulaire, filtres
     */
     .titre {
-        width: 100%;
+        width: 90%;
         margin-top: 100px;
     }
     .intro {
         width: auto;
         padding-right: 30px;
         padding-left: 30px;
-        font-size: 3em;
+        font-size: 2.85em;
         margin: 0;
     }
     .sous-titre {
@@ -1256,9 +1256,10 @@ Iphone8
         position: relative;
     }
     .intro2 {
-        margin-right: 60%;
+        margin-right: 55%;
         margin-left: 35px;
         font-size: 1.5em;
+        white-space: nowrap;
     }
     .chart img {
         width: 30px;
@@ -1531,7 +1532,6 @@ Iphone8
         flex-wrap: wrap;
         justify-content: flex-start;
         border-radius: 25px;
-        box-shadow: 0 6px 3px #f2f2f2;
     }
     .bas1 {
         width: 100%;
@@ -1542,7 +1542,6 @@ Iphone8
         justify-content: flex-start;
         margin-top: 45px;
         border-radius: 25px;
-        box-shadow: 0 6px 3px #f2f2f2;
     }
     .haut2 {
         width: 100%;
@@ -1552,7 +1551,6 @@ Iphone8
         flex-wrap: wrap;
         justify-content: flex-start;
         border-radius: 25px;
-        box-shadow: 0 6px 3px #f2f2f2;
     }
     .bas2 {
         width: 100%;
@@ -1563,7 +1561,6 @@ Iphone8
         justify-content: flex-start;
         margin-top: 45px;
         border-radius: 25px;
-        box-shadow: 0 6px 3px #f2f2f2;
     }
     .vieux_port {
         width: 100%;
@@ -1583,6 +1580,7 @@ Iphone8
         padding-left: 15px;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
+        box-shadow: 0 6px 3px #f2f2f2;
     }
     .pomegue {
         width: 100%;
@@ -1602,6 +1600,7 @@ Iphone8
         padding-left: 15px;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
+        box-shadow: 0 6px 3px #f2f2f2;
     }
     .frioul {
         width: 100%;
@@ -1621,6 +1620,7 @@ Iphone8
         padding-left: 15px;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
+        box-shadow: 0 6px 3px #f2f2f2;
     }
     .calanques {
         width: 100%;
@@ -1640,6 +1640,7 @@ Iphone8
         padding-left: 15px;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
+        box-shadow: 0 6px 3px #f2f2f2;
     }
     .notre_dame {
         width: 100%;
@@ -1659,6 +1660,7 @@ Iphone8
         padding-left: 15px;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
+        box-shadow: 0 6px 3px #f2f2f2;
     }
     .parc_lc {
         width: 100%;
@@ -1679,26 +1681,27 @@ Iphone8
         padding-left: 15px;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
+        box-shadow: 0 6px 3px #f2f2f2;
     }
     /*
     Footer
     */
     footer {
         background-color: #F2F2F2;
-        width: auto;
+        width: 90%;
         height: fit-content;
+        display: flex;
+        flex-direction: column;
         padding-right: 30px;
         padding-left: 30px;
-        position: relative;
     }
     .conteneur7,
     .conteneur8,
     .conteneur9 {
-        width: 25%;
-        height: 100%;
+        width: auto;
+        height: fit-content;
         display: flex;
         align-items: center;
-        margin-right: 160px;
     }
     footer ul {
         padding-left: 0;
