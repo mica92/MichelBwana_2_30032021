@@ -51,46 +51,26 @@ header {
 }
 
 .navigation {
-    width: fit-content;
-    position: relative;
+    width: 20%;
 }
 
-.navigation span {
-    width: auto;
-}
-
-.navigation ul {
-    /*Détermine le comportement flex du bloc nav*/
-    width: auto;
+.navi {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .navigation a {
+    display: block;
+    float: left;
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-decoration: none;
+    border-top: 3px solid transparent;
 }
 
-.navigation li {
-    width: auto;
-    text-align: center;
-    list-style-type: none;
-}
-
-.hotels {
-    color: black;
-    font-weight: normal;
-    margin-right: 55px;
-}
-
-.loisirs {
-    color: black;
-    font-weight: normal;
-    margin-right: 55px;
-}
-
-.hotels:hover,
-.loisirs:hover {
-    color: #0065FC;
-    text-decoration: overline;
+.navigation a:hover {
+    border-top: 3px solid #0065FC;
 }
 
 .inscription {
@@ -136,11 +116,12 @@ Body, formulaire, filtres
     display: flex;
     flex-direction: row;
     padding-left: 30px;
+    margin-bottom: 40px;
 }
 
 .map {
     background-color: #F2F2F2;
-    width: 75px;
+    width: 65px;
     height: 45px;
     display: flex;
     justify-content: center;
@@ -155,6 +136,10 @@ Body, formulaire, filtres
     height: fit-content;
 }
 
+.entrer_ville {
+    display: flex;
+}
+
 .ville {
     width: 250px;
     height: 45px;
@@ -166,7 +151,7 @@ Body, formulaire, filtres
 
 .rechercher {
     background-color: #0065FC;
-    width: 150px;
+    width: 145px;
     height: 45px;
     border: none;
     font-weight: bold;
@@ -174,6 +159,10 @@ Body, formulaire, filtres
     color: white;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+
+span .fas.fa.search {
+    display: none;
 }
 
 
@@ -187,6 +176,7 @@ Filtres
     display: flex;
     justify-content: flex-start;
     padding-left: 30px;
+    margin-bottom: 30px;
 }
 
 .mes_filtres {
@@ -288,6 +278,7 @@ Section principale
     display: flex;
     padding-right: 30px;
     padding-left: 30px;
+    margin-bottom: 30px;
 }
 
 .fa-info-circle {
@@ -313,6 +304,7 @@ Section principale
     width: 99%;
     margin: auto;
     display: flex;
+    margin-bottom: 40px;
 }
 
 .hebergements {
@@ -432,6 +424,10 @@ Section principale
 
 .fas.fa-star {
     color: #0065FC;
+}
+
+.fa.fa-star {
+    color: #D8D8D8;
 }
 
 .plus {
@@ -574,6 +570,10 @@ Section principale
 /*
 Artcile sur les activités
 */
+
+article {
+    margin-bottom: 75px;
+}
 
 #ancre2 {
     width: 99%;
@@ -815,9 +815,10 @@ Footer
 footer {
     background-color: #F2F2F2;
     width: auto;
-    height: 170px;
+    height: 200px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
+    align-items: center;
     padding-right: 30px;
     padding-left: 30px;
     position: relative;
@@ -960,6 +961,9 @@ Ipad
         border-top-left-radius: 25px;
         border-bottom-left-radius: 25px;
     }
+    footer {
+        height: 275px;
+    }
 }
 
 
@@ -993,42 +997,61 @@ Iphone8
     .logo img {
         block-size: 100px;
     }
+    .navi {
+        display: flex;
+        justify-content: space-around;
+    }
     .navigation {
-        width: 94%;
+        width: 100%;
+        display: block;
+        display: block;
+        float: left;
+        color: black;
+        padding-top: 0;
+        padding-bottom: 0;
         top: 50px;
         margin-top: 75px;
+        text-decoration: none;
+        border-top: none;
+        border-bottom: 5px solid #F2F2F2;
         position: absolute;
     }
-    .navigation ul {
-        /*Détermine le comportement flex du bloc nav*/
-        width: auto;
-        display: flex;
-    }
     .navigation a {
-        width: 50%;
         text-decoration: none;
+        border-top: none;
     }
-    .navigation li {
-        width: auto;
-        list-style-type: none;
+    .auberge {
+        width: 50%;
+        padding-left: 10%;
+    }
+    .detente {
+        width: 50%;
+        padding-left: 5%;
+        text-align: center;
     }
     .hotels {
         color: black;
         font-weight: normal;
-        font-size: 2.25em;
+        font-size: 2.75em;
         text-align: left;
     }
     .loisirs {
         color: black;
         font-weight: normal;
-        font-size: 2.25em;
+        font-size: 2.75em;
         text-align: center;
         padding-left: 60px;
     }
-    .hotels:hover,
-    .loisirs:hover {
+    .navigation .hotels:hover {
         color: #0065FC;
-        text-decoration: underline;
+        border-top: none;
+        border-bottom: 5px solid #0065FC;
+    }
+    .navigation .loisirs:hover {
+        color: #0065FC;
+        padding-left: 0;
+        border-top: none;
+        border-bottom: 5px solid #0065FC;
     }
     .inscription {
         height: auto;
@@ -1075,7 +1098,33 @@ Iphone8
         flex-direction: row;
         padding-left: 30px;
     }
-    .map {
+    .formulaire img {
+        width: 20px;
+        height: fit-content;
+    }
+    .entrer_ville {
+        display: flex;
+    }
+    .ville {
+        width: 250px;
+        height: 45px;
+        border-top: 2px solid #F2F2F2;
+        border-bottom: 2px solid #F2F2F2;
+        border-left: none;
+        border-right: none;
+    }
+    .rechercher {
+        background-color: #0065FC;
+        width: 145px;
+        height: 45px;
+        border: none;
+        font-weight: bold;
+        font-size: 1.1em;
+        color: white;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    */ .map {
         background-color: #F2F2F2;
         width: 10%;
         height: 100%;
@@ -1114,6 +1163,9 @@ Iphone8
         border-bottom-right-radius: 15px;
         border-bottom-left-radius: 15px;
         border-top-left-radius: 15px;
+    }
+    .fas.fa.search {
+        display: none;
     }
     /*
     Filtres
@@ -1689,9 +1741,9 @@ Iphone8
     footer {
         background-color: #F2F2F2;
         width: 90%;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
+        height: auto;
+        display: block;
+        font-size: 2.5em;
         padding-right: 30px;
         padding-left: 30px;
     }
@@ -1700,8 +1752,6 @@ Iphone8
     .conteneur9 {
         width: auto;
         height: fit-content;
-        display: flex;
-        align-items: center;
     }
     footer ul {
         padding-left: 0;

@@ -3,9 +3,7 @@
 
 <head>
     <meta charset='utf-8'>
-    <!--<meta http-equiv='X-UA-Compatible' content='IE=edge'>-->
     <title>Reservia - Trouvez votre hébergement pour des vacances de rêves</title>
-    <!--<meta name='viewport' content='width=device-width, initial-scale=1'>-->
     <link rel='stylesheet' type='text/css' href='reservia.css'>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
@@ -17,15 +15,9 @@
                 <img src="img/logo/Reservia.svg" alt="logo">
             </div>
             <div class="navigation">
-                <nav>
-                    <ul>
-                        <a href="#ancre1">
-                            <li class="hotels">Hébergements</li>
-                        </a>
-                        <a href="#ancre2">
-                            <li class="loisirs">Activités</li>
-                        </a>
-                    </ul>
+                <nav class="navi">
+                    <a href="#ancre1" class="hotels">Hébergements</a>
+                    <a href="#ancre2" class="loisirs">Activités</a>
                 </nav>
             </div>
             <div class="inscription">
@@ -45,13 +37,16 @@
             <span class="map">
                 <img src="img/map-marker-alt-solid.svg" alt="map">
             </span>
-            <form class="entrer_ville">
-                <input type="search" name="ville" class="ville" />
+            <form method="POST" action="#" class="entrer_ville">
+                <span>
+                    <input type="search" name="ville" class="ville" placeholder="Ex: Londres, GB"/>
+                </span>
+                <span>
+                    <input type="submit" name="rechercher" class="rechercher" value="Rechercher"/>
+                    <i class="fas fa-search"></i>
+                </span>
             </form>
-            <form>
-                <input type="submit" name="rechercher" class="rechercher" value="Rechercher" />
-            </form>
-        </div><br><br>
+        </div>
         <div class="filtres">
             <div class="mes_filtres">Filtres</div>
             <div class="economique">
@@ -68,7 +63,7 @@
             <div class="animaux">
                 <div class="dog"><i class="fas fa-dog"></i>
                 </div>Animaux autorisés</div>
-        </div><br><br>
+        </div>
         <!--b
             Début section principale
         -->
@@ -76,7 +71,7 @@
             <i class="far fa-info-circle"></i>
             <span class="disponibles">Plus de 500 logements sont disponibles dans cette ville</span>
         </div>
-        <br><br>
+
         <div class="base">
             <section class="hebergements">
                 <div class="conteneur1">
@@ -94,7 +89,7 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="fas fa-star" style="color: #d8d8d8;"></i>
+                                    <i class="fa fa-star"></i>
                                 </div>
                             </a>
                         </div>
@@ -121,8 +116,8 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="fas fa-star" style="color: #d8d8d8;"></i>
-                                    <i class="fas fa-star" style="color: #d8d8d8;"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
                                 </div>
                             </a>
                         </div>
@@ -137,8 +132,8 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="fas fa-star" style="color: #d8d8d8;"></i>
-                                    <i class="fas fa-star" style="color: #d8d8d8;"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
                                 </div>
                             </a>
                         </div>
@@ -152,7 +147,7 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="fas fa-star" style="color: #d8d8d8;"></i>
+                                    <i class="fa fa-star"></i>
                                 </div>
                             </a>
                         </div>
@@ -203,7 +198,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <i class="fas fa-star" style="color: #d8d8d8;"></i>
+                            <i class="fa fa-star"></i>
                         </span>
                     </div>
                 </div>
@@ -217,12 +212,12 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <i class="fas fa-star" style="color: #d8d8d8;"></i>
+                            <i class="fa fa-star"></i>
                         </span>
                     </div>
                 </div>
             </aside>
-        </div><br><br>
+        </div>
         <!--
             Fin section principal et début bloc article
         -->
@@ -270,7 +265,7 @@
                     </div>
                 </a>
             </div>
-        </article><br><br><br>
+        </article>
 
         <!--Fin bloc article et début footer-->
         <footer>
