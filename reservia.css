@@ -1164,8 +1164,8 @@ Iphone8
         border-bottom-left-radius: 15px;
         border-top-left-radius: 15px;
     }
-    .fas.fa.search {
-        display: none;
+    i#test {
+        display: none !important;
     }
     /*
     Filtres
