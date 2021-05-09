@@ -88,8 +88,12 @@ header {
 
 
 /*
-Body, formulaire, filtres
+1er article, formulaire, filtres
 */
+
+article {
+    margin-bottom: 30px !important;
+}
 
 .intro {
     width: auto;
@@ -266,19 +270,18 @@ Filtres
     text-align: center;
 }
 
-
-/*
-Section principale
-*/
-
 .information {
     width: fit-content;
     height: 35px;
     display: flex;
     padding-right: 30px;
     padding-left: 30px;
-    margin-bottom: 30px;
 }
+
+
+/*
+Section principale
+*/
 
 .fa-info-circle {
     color: #0065FC;
@@ -384,6 +387,7 @@ Section principale
     padding-left: 5px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    object-fit: cover;
 }
 
 .lieu1 {
@@ -514,6 +518,7 @@ Section principale
     /*max-height: 145px;*/
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    object-fit: cover;
 }
 
 .bleu_blanc {
@@ -522,6 +527,7 @@ Section principale
     /*max-height: 125px;*/
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    object-fit: cover;
 }
 
 .lieu2 {
@@ -684,6 +690,7 @@ article {
     height: 400px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    object-fit: cover;
 }
 
 .port {
@@ -705,6 +712,7 @@ article {
     height: 80%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    object-fit: cover;
 }
 
 .fort {
@@ -726,6 +734,7 @@ article {
     height: 80%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    object-fit: cover;
 }
 
 .iles {
@@ -747,6 +756,7 @@ article {
     height: 400px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    object-fit: cover;
 }
 
 .parc_national {
@@ -768,6 +778,7 @@ article {
     height: 80%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    object-fit: cover;
 }
 
 .dame {
@@ -789,6 +800,7 @@ article {
     height: 80%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    object-fit: cover;
 }
 
 .longchamp {
@@ -870,6 +882,15 @@ Ipad
         font-size: 0.9em;
         padding-left: 15px;
         display: inline-table;
+    }
+    .etoiles1 {
+        width: 95%;
+        display: inline-table;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: space-between;
+        padding-left: 15px;
+        border-radius: 25px;
     }
     .lieu2 {
         width: 100%;
@@ -974,7 +995,7 @@ Iphone8
 
 @media all and (max-width: 1024px) {
     body {
-        width: 95%;
+        width: 100%;
     }
     .conteneur {
         width: 100%;
@@ -1003,7 +1024,6 @@ Iphone8
     }
     .navigation {
         width: 100%;
-        display: block;
         display: block;
         color: black;
         padding-top: 0;
@@ -1067,7 +1087,8 @@ Iphone8
         width: auto;
         padding-right: 30px;
         padding-left: 30px;
-        font-size: 2.85em;
+        white-space: break-spaces;
+        font-size: 3.075rem;
         margin: 0;
     }
     .sous-titre {
@@ -1076,42 +1097,14 @@ Iphone8
     }
     .sous-titre span {
         width: auto;
-        font-size: 2.15em;
+        font-size: 2.15rem;
         padding-right: 30px;
         padding-left: 30px;
         margin: 0;
     }
-    /*
-    .formulaire img {
-        width: 20px;
-        height: fit-content;
-    }
-    .entrer_ville {
-        display: flex;
-    }
-    .ville {
-        width: 250px;
-        height: 45px;
-        border-top: 2px solid #F2F2F2;
-        border-bottom: 2px solid #F2F2F2;
-        border-left: none;
-        border-right: none;
-    }
-    .rechercher {
-        background-color: #0065FC;
-        width: 145px;
-        height: 45px;
-        border: none;
-        font-weight: bold;
-        font-size: 1.1em;
-        color: white;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-    }
-    */
     .formulaire {
-        width: 90%;
-        height: 75px;
+        width: 95%;
+        height: 85px;
         display: flex;
         flex-direction: row;
         padding-left: 30px;
@@ -1142,7 +1135,7 @@ Iphone8
         width: 100%;
         height: 100%;
         padding-left: 10px;
-        font-size: 1.5em;
+        font-size: 2rem;
         border-top: 2px solid #F2F2F2;
         border-bottom: 2px solid #F2F2F2;
         border-left: none;
@@ -1192,7 +1185,7 @@ Iphone8
         width: auto;
         height: 50px;
         display: flex;
-        font-size: 1.5em;
+        font-size: 2rem;
         align-items: center;
         padding-top: 0;
         padding-right: 25px;
@@ -1212,7 +1205,7 @@ Iphone8
         width: auto;
         height: 50px;
         display: flex;
-        font-size: 1.5em;
+        font-size: 2rem;
         align-items: center;
         padding-top: 0;
         padding-right: 25px;
@@ -1233,7 +1226,7 @@ Iphone8
         width: auto;
         height: 50px;
         display: flex;
-        font-size: 1.5em;
+        font-size: 2rem;
         align-items: center;
         padding-top: 0;
         padding-right: 25px;
@@ -1253,7 +1246,7 @@ Iphone8
         width: auto;
         height: 50px;
         display: flex;
-        font-size: 1.5em;
+        font-size: 2rem;
         align-items: center;
         padding-top: 0;
         padding-right: 25px;
@@ -1282,42 +1275,42 @@ Iphone8
     }
     .fa-money-bill-wave {
         background-color: #DEEBFF;
-        width: 40px;
-        height: 35px;
+        width: 50px;
+        height: 38px;
         border-radius: 50%;
         position: relative;
         padding-top: 15px;
-        margin-top: 1.5px;
+        margin-top: 0;
         text-align: center;
     }
     .fa-child {
         background-color: #DEEBFF;
-        width: 40px;
-        height: 35px;
+        width: 50px;
+        height: 38px;
         border-radius: 50%;
         position: relative;
         padding-top: 15px;
-        margin-top: 1.5px;
+        margin-top: 0;
         text-align: center;
     }
     .fa-heart {
         background-color: #DEEBFF;
-        width: 40px;
-        height: 35px;
+        width: 50px;
+        height: 38px;
         border-radius: 50%;
         position: relative;
         padding-top: 15px;
-        margin-top: 1.5px;
+        margin-top: 0;
         text-align: center;
     }
     .fa-dog {
         background-color: #DEEBFF;
-        width: 40px;
-        height: 35px;
+        width: 50px;
+        height: 38px;
         border-radius: 50%;
         position: relative;
         padding-top: 15px;
-        margin-top: 1.5px;
+        margin-top: 0;
         text-align: center;
     }
     /*
@@ -1343,6 +1336,7 @@ Iphone8
     .disponibles {
         width: fit-content;
         height: 30px;
+        font-size: 1.75rem;
         margin-left: 15px;
         position: relative;
         top: 3px;
@@ -1350,6 +1344,7 @@ Iphone8
     .base {
         width: 99%;
         margin: auto;
+        margin-top: 25px;
         display: flex;
         flex-direction: column-reverse;
     }
@@ -1372,11 +1367,12 @@ Iphone8
     .intro2 {
         margin-right: auto;
         margin-left: 35px;
-        font-size: 1.5em;
+        font-size: 2.5em;
         white-space: nowrap;
     }
     .chart img {
-        width: 30px;
+        width: 50px;
+        padding-right: 60px;
     }
     .pop {
         width: 60%;
@@ -1433,7 +1429,9 @@ Iphone8
     .lieu2 {
         width: 100%;
         height: 30%;
+        display: inline-table;
         font-weight: bold;
+        font-size: 2rem;
         padding-top: 10px;
         padding-left: 15px;
         white-space: nowrap;
@@ -1443,7 +1441,7 @@ Iphone8
     .nuit2 {
         width: 100%;
         height: 30%;
-        font-size: 0.9em;
+        font-size: 2rem;
         padding-top: 5px;
         padding-left: 15px;
         border-radius: 25px;
@@ -1458,6 +1456,7 @@ Iphone8
     .etoiles2 {
         width: 100%;
         height: 30%;
+        font-size: 2rem;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -1488,7 +1487,7 @@ Iphone8
     .intro1 {
         width: auto;
         margin-left: 35px;
-        font-size: 1.5em;
+        font-size: 2rem;
     }
     .conteneur1_haut {
         display: flex;
@@ -1546,15 +1545,14 @@ Iphone8
     }
     .lieu1 {
         width: 95%;
-        height: 5%;
+        font-size: 2rem;
         font-weight: bold;
         padding-left: 15px;
         border-radius: 25px;
     }
     .nuit1 {
         width: 95%;
-        height: 5%;
-        font-size: 0.9em;
+        font-size: 2rem;
         padding-left: 15px;
         border-radius: 25px;
     }
@@ -1567,7 +1565,7 @@ Iphone8
     }
     .etoiles1 {
         width: 95%;
-        height: 5%;
+        font-size: 2rem;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -1579,10 +1577,10 @@ Iphone8
         color: #0065FC;
     }
     .plus {
-        width: 150px;
+        width: 25%;
         height: 30px;
         font-weight: bold;
-        font-size: 1.5em;
+        font-size: 2rem;
         padding-bottom: 25px;
         margin-left: 45px;
         position: relative;
@@ -1600,9 +1598,9 @@ Iphone8
     }
     #ancre2 {
         width: 90%;
-        font-size: 1.5em;
+        font-size: 2.5em;
         padding-top: 15px;
-        margin-bottom: 45px;
+        margin-bottom: 90px;
     }
     .conteneur3,
     .conteneur5 {
@@ -1686,6 +1684,7 @@ Iphone8
         background-color: white;
         width: 98%;
         height: 100px;
+        font-size: 2rem;
         font-weight: bold;
         display: flex;
         flex-direction: row;
@@ -1706,6 +1705,7 @@ Iphone8
         background-color: white;
         width: 98%;
         height: 100px;
+        font-size: 2rem;
         font-weight: bold;
         display: flex;
         flex-direction: row;
@@ -1726,6 +1726,7 @@ Iphone8
         background-color: white;
         width: 98%;
         height: 100px;
+        font-size: 2rem;
         font-weight: bold;
         display: flex;
         flex-direction: row;
@@ -1746,6 +1747,7 @@ Iphone8
         background-color: white;
         width: 98%;
         height: 100px;
+        font-size: 2rem;
         font-weight: bold;
         display: flex;
         flex-direction: row;
@@ -1766,6 +1768,7 @@ Iphone8
         background-color: white;
         width: 98%;
         height: 100px;
+        font-size: 2rem;
         font-weight: bold;
         display: flex;
         flex-direction: row;
@@ -1786,6 +1789,7 @@ Iphone8
         background-color: white;
         width: 98%;
         height: 100px;
+        font-size: 2rem;
         font-weight: bold;
         display: flex;
         flex-direction: row;
@@ -1805,7 +1809,7 @@ Iphone8
         width: 90%;
         height: auto;
         display: block;
-        font-size: 2.5em;
+        font-size: 2rem;
         padding-right: 30px;
         padding-left: 30px;
     }

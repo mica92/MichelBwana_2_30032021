@@ -9,6 +9,11 @@
 </head>
 
 <body>
+    <!--Header subdivisé en 3 blocs indépendants
+        1. Logo
+        2. Navigation (liens -ancres- vers hébergements et activités)
+        3. Inscription
+    -->
     <div id="conteneur">
         <header>
             <div class="logo">
@@ -24,55 +29,59 @@
                 <a href="#" target="_blank">S'inscrire</a>
             </div>
         </header><br>
-        <!--
-            Fin Header et début Body
+        <!--1er bloc "article" sans classe afin de regrouper tous
+            les éléments entre Header et bloc div "Base" 
+            (ou section principale)
         -->
-        <div class="titre">
-            <h2 class="intro">Trouvez votre hébergement pour des vacances de rêve</h2>
-        </div>
-        <div class="sous-titre">
-            <span>En plein centre ville ou en pleine nature</span>
-        </div><br>
-        <div class="formulaire">
-            <span class="map">
-                <img src="img/map-marker-alt-solid.svg" alt="map">
-            </span>
-            <form method="POST" action="#" class="entrer_ville">
-                <span class="localisation">
-                    <input type="search" name="ville" class="ville" placeholder="Ex: Londres, GB" />
+        <article>
+            <div class="titre">
+                <h2 class="intro">Trouvez votre hébergement pour des vacances de rêve</h2>
+            </div>
+            <div class="sous-titre">
+                <span>En plein centre ville ou en pleine nature</span>
+            </div><br>
+            <div class="formulaire">
+                <span class="map">
+                    <img src="img/map-marker-alt-solid.svg" alt="map">
                 </span>
-                <button>
-                    <span class="rechercher">Rechercher</span>
-                    <i class="fas fa-search" id="invisible">
-                    </i>
-                </button>
-            </form>
-        </div>
-        <div class="filtres">
-            <div class="mes_filtres">Filtres</div>
-            <div class="economique">
-                <div class="bill">
-                    <i class="fas fa-money-bill-wave"></i>
-                </div>Économique</div>
-            <div class="familial">
-                <div class="child">
-                    <i class="fas fa-child"></i>
-                </div>Familial</div>
-            <div class="romantique">
-                <div class="heart"><i class="fas fa-heart"></i>
-                </div>Romantique</div>
-            <div class="animaux">
-                <div class="dog"><i class="fas fa-dog"></i>
-                </div>Animaux autorisés</div>
-        </div>
-        <!--b
-            Début section principale
+                <form method="POST" action="#" class="entrer_ville">
+                    <span class="localisation">
+                        <input type="search" name="ville" class="ville" placeholder="Ex: Londres, GB" />
+                    </span>
+                    <button>
+                        <span class="rechercher">Rechercher</span>
+                        <i class="fas fa-search" id="invisible"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="filtres">
+                <div class="mes_filtres">Filtres</div>
+                <div class="economique">
+                    <div class="bill">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>Économique</div>
+                <div class="familial">
+                    <div class="child">
+                        <i class="fas fa-child"></i>
+                    </div>Familial</div>
+                <div class="romantique">
+                    <div class="heart"><i class="fas fa-heart"></i>
+                    </div>Romantique</div>
+                <div class="animaux">
+                    <div class="dog"><i class="fas fa-dog"></i>
+                    </div>Animaux autorisés</div>
+            </div>
+            <div class="information">
+                <i class="far fa-info-circle"></i>
+                <span class="disponibles">Plus de 500 logements sont disponibles dans cette ville</span>
+            </div>
+        </article>
+        <!--Section principale du site avec l'énumération de chacun
+            des hébergements disponibles dans la région choisie
+            Bloc principale (Base) subdivisé en 2 parties:
+            1. SECTION hebergements avec Div classe "Conteneur1"
+            2. ASIDE avec classe "Conteneur2"
         -->
-        <div class="information">
-            <i class="far fa-info-circle"></i>
-            <span class="disponibles">Plus de 500 logements sont disponibles dans cette ville</span>
-        </div>
-
         <div class="base">
             <section class="hebergements">
                 <div class="conteneur1">
@@ -170,6 +179,7 @@
                     <p class="plus"><a href="#" target="_blank">Afficher plus</a></p>
                 </div>
             </section>
+            <!--Fin de la section er début du bloc aside-->
             <aside class="conteneur2">
                 <h3 class="populaires">
                     <span class="intro2">Les plus populaires</span>
@@ -219,8 +229,9 @@
                 </div>
             </aside>
         </div>
-        <!--
-            Fin section principal et début bloc article
+        <!--Fin du bloc "principal"
+            Nouveau bloc "indépendant" -ARTICLE- comprenant lien vers
+            ancre2 (activités)
         -->
         <article class="activites">
             <div id="ancre2">
@@ -267,8 +278,7 @@
                 </a>
             </div>
         </article>
-
-        <!--Fin bloc article et début footer-->
+        <!--FOOTER-->
         <footer>
             <div class="conteneur7">
                 <div class="propos">
