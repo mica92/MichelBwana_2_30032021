@@ -867,7 +867,7 @@ MEDIA QUERIES
 Ipad
 **/
 
-@media all and (min-width: 1025px) and (max-width: 1295px) {
+@media screen and (min-width: 1025px) and (max-width: 1295px) {
     .element1 .lieu1 {
         width: 95%;
         height: 5%;
