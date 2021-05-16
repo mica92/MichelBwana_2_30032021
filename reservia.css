@@ -993,7 +993,7 @@ Ipad
 Iphone8
 **/
 
-@media all and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     body {
         width: auto;
     }
