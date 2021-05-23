@@ -1613,11 +1613,7 @@ Iphone8
         box-shadow: 0 6px 3px #f2f2f2;
     }
     .activites a {
-        color: black;
-        list-style-type: none;
-        text-decoration: none;
-    }
-    .activites a {
+        width: 100%;
         color: black;
         list-style-type: none;
         text-decoration: none;
@@ -1631,7 +1627,7 @@ Iphone8
     .conteneur4,
     .conteneur6 {
         width: 91%;
-        height: fit-content;
+        height: auto;
         display: flex;
         flex-direction: column;
         border-radius: 25px;
