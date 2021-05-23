@@ -1470,7 +1470,7 @@ Iphone8
     }
     .hebergements {
         width: 100%;
-        height: fit-content;
+        height: auto !important;
         display: flex;
         justify-content: space-between;
         margin-top: 50px;
@@ -1592,7 +1592,7 @@ Iphone8
     */
     .activites {
         width: 99%;
-        height: fit-content;
+        height: auto !important;
         display: flex;
         flex-direction: column;
         padding-left: 45px;
@@ -1808,9 +1808,9 @@ Iphone8
     */
     footer {
         background-color: #F2F2F2;
-        width: 90%;
+        width: 97%;
         height: auto;
-        display: block;
+        display: block !important;
         font-size: 2rem;
         padding-right: 30px;
         padding-left: 30px;
@@ -1819,7 +1819,7 @@ Iphone8
     .conteneur8,
     .conteneur9 {
         width: auto;
-        height: fit-content;
+        height: auto !important;
     }
     footer ul {
         padding-left: 0;
