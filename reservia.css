@@ -1134,8 +1134,8 @@ Iphone8
         width: 70%;
     }
     .ville {
-        width: -webkit-fill-available;
-        height: 150%;
+        width: 150%;
+        height: 100%;
         padding-left: 10px;
         font-size: 2rem;
         border-top: 2px solid #F2F2F2;
