@@ -1134,14 +1134,14 @@ Iphone8
         width: 70%;
     }
     .ville {
-        width: 100%;
+        width: -webkit-fill-available;
         height: 100%;
         padding-left: 10px;
         font-size: 2rem;
         border-top: 2px solid #F2F2F2;
         border-bottom: 2px solid #F2F2F2;
-        border-left: #F2F2F2;
-        border-right: #F2F2F2;
+        border-left: none;
+        border-right: none;
     }
     button {
         background-color: #0065FC;
