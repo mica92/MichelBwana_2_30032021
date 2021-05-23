@@ -295,9 +295,9 @@ Section principale
     border-color: #D9D9D9;
     border-style: solid;
     width: 20px;
-    height: 20px;
+    height: 19px;
     padding-top: 2.5px;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     border-radius: 50%;
     position: relative;
     text-align: center;
@@ -1143,7 +1143,7 @@ Iphone8
         width: 70%;
     }
     .ville {
-        width: 100%;
+        width: 105%;
         height: 100%;
         padding-left: 10px;
         font-size: 2rem;
@@ -1158,7 +1158,7 @@ Iphone8
         height: 100%;
         border: none;
         font-weight: bold;
-        font-size: 1.1em;
+        font-size: 2rem;
         color: white;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
