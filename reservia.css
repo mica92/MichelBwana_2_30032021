@@ -2101,7 +2101,7 @@ Iphone8
 Très petits écrans
 **/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .hebergements {
         width: auto;
         height: auto !important;
